@@ -1,534 +1,391 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>羽羽的烦恼</title>
-      <link href="null/"/>
-      <url>null/</url>
-      
-        <content type="html"><![CDATA[<p>早上不想起床</p><p>早上不想上学</p><p>早上不想吃饭</p><p>中午不想去托班</p><p>晚上不想写作业</p><p>晚上不想睡觉</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>早上跑步</title>
-      <link href="null/"/>
-      <url>null/</url>
-      
-        <content type="html"><![CDATA[<p>大宝第一天早起跑步</p><p>陪着妈妈</p><p>还有妈妈的妈妈</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>养成好性格</title>
-      <link href="null/"/>
-      <url>null/</url>
-      
-        <content type="html"><![CDATA[<p>好的性格</p><p>不仅改变自己</p><p>更重要的是影响孩子</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开学了</title>
-      <link href="null/"/>
-      <url>null/</url>
-      
-        <content type="html"><![CDATA[<p>开学了</p><p>总是在开学前熬夜完成假期作业</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>外面的世界</title>
-      <link href="outworld/"/>
-      <url>outworld/</url>
-      
-        <content type="html"><![CDATA[<p>平时都很少出门的默默</p><p>今年因为疫情原因更是不能出门</p><p>现在可以外出活动</p><p>这已经是默默最想的事情了</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>再见2019，你好2020</title>
+    <url>/newyear/</url>
+    <content><![CDATA[<h2 id="再见2019"><a href="#再见2019" class="headerlink" title="再见2019"></a>再见2019</h2><p>让烦恼随你而去</p>
+<h2 id="你好2020"><a href="#你好2020" class="headerlink" title="你好2020"></a>你好2020</h2><p>愿未来更加美好</p>
+]]></content>
       <categories>
-          
-          <category> MoMo </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 成长 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>季姬击鸡记</title>
-      <link href="ji/"/>
-      <url>ji/</url>
-      
-        <content type="html"><![CDATA[<p>季姬寂，</p><p>集鸡，</p><p>鸡即棘鸡。</p><p>棘鸡饥叽，</p><p>季姬及箕稷济鸡。</p><a id="more"></a><p>鸡既济，</p><p>跻姬笈，</p><p>季姬忌，</p><p>急咭鸡，</p><p>鸡急，</p><p>继圾几，</p><p>季姬急，</p><p>即籍箕击鸡，</p><p>箕疾击几伎，</p><p>伎即齑，</p><p>鸡叽集几基，</p><p>季姬急极屐击鸡，</p><p>鸡既殛，</p><p>季姬激，</p><p>即记《季姬击鸡记》。</p>]]></content>
-      
-      
+      <tags>
+        <tag>节日</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>心之何如</title>
+    <url>/heart/</url>
+    <content><![CDATA[<h4 id="心之何如"><a href="#心之何如" class="headerlink" title="心之何如"></a>心之何如</h4><h4 id="有似万丈迷津"><a href="#有似万丈迷津" class="headerlink" title="有似万丈迷津"></a>有似万丈迷津</h4><h4 id="遥亘千里"><a href="#遥亘千里" class="headerlink" title="遥亘千里"></a>遥亘千里</h4><h5 id="其中并无舟子可以渡人"><a href="#其中并无舟子可以渡人" class="headerlink" title="其中并无舟子可以渡人"></a>其中并无舟子可以渡人</h5><a id="more"></a>
+
+<h5 id="除了自渡"><a href="#除了自渡" class="headerlink" title="除了自渡"></a>除了自渡</h5><h6 id="他人爱莫能助"><a href="#他人爱莫能助" class="headerlink" title="他人爱莫能助"></a>他人爱莫能助</h6>]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 小众 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>闰年二月</title>
-      <link href="february/"/>
-      <url>february/</url>
-      
-        <content type="html"><![CDATA[<p>四年一次</p><p>值得记录一下</p><p>从一月下旬开始的新冠病毒</p><p>不能出门</p><p>不能走亲访友</p><p>没有交通</p><p>没有物资</p><p>都需要抢购</p><a id="more"></a><p>不能开学</p><p>不能上班</p><p>出门口罩</p><p>进门消毒</p><p>等待疫情结束</p>]]></content>
-      
-      
+      <tags>
+        <tag>Aoe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>腊八节</title>
+    <url>/labafestival/</url>
+    <content><![CDATA[<p>到了腊八节离过年就很近了</p>
+<p>这几天天气也格外的冷</p>
+]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 节日 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>七年</title>
-      <link href="sevenyear/"/>
-      <url>sevenyear/</url>
-      
-        <content type="html"><![CDATA[<p>七年了，应该送个礼物。</p>]]></content>
-      
-      
+      <tags>
+        <tag>节日</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分身乏术</title>
+    <url>/lackofavatar/</url>
+    <content><![CDATA[<p>宝贝今天在医院，需要打针、输水、高压氧舱等治疗</p>
+<p>大宝今天需要开家长会，还要游泳</p>
+<p>小宝需要专人带着</p>
+<p>三个人需要三个人</p>
+<p>下午我赶到单位上班，宝贝一个人</p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 节日 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如此工作</title>
-      <link href="work/"/>
-      <url>work/</url>
-      
-        <content type="html"><![CDATA[<p>早上出门</p><p>遇见保洁</p><p>遇见保安</p><p>遇见晨练的人</p><p>因为大家都已经放假了</p><p>心情好一点吧</p><p>今天最后一天</p>]]></content>
-      
-      
+      <tags>
+        <tag>Aoe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宝贝 大宝 小宝</title>
+    <url>/baby/</url>
+    <content><![CDATA[<p><img src="http://img.weaoe.com/home.jpg" alt="home"></p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 工作 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>更新说明</title>
-      <link href="update/"/>
-      <url>update/</url>
-      
-        <content type="html"><![CDATA[<hr><h2 id="3-27-URL改为urlname"><a href="#3-27-URL改为urlname" class="headerlink" title="3.27 URL改为urlname"></a>3.27 URL改为urlname</h2><h4 id="hexo配置文件-config-yml"><a href="#hexo配置文件-config-yml" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :title&#x2F;</span><br></pre></td></tr></table></figure><p>修改为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :urlname&#x2F;</span><br></pre></td></tr></table></figure><h4 id="更改模版：增加URLname、update以及文件名增加日期"><a href="#更改模版：增加URLname、update以及文件名增加日期" class="headerlink" title="更改模版：增加URLname、update以及文件名增加日期"></a>更改模版：增加URLname、update以及文件名增加日期</h4><h4 id="更改文件：重命名所有文件的标题"><a href="#更改文件：重命名所有文件的标题" class="headerlink" title="更改文件：重命名所有文件的标题"></a>更改文件：重命名所有文件的标题</h4><h2 id="1-15-URL去掉日期"><a href="#1-15-URL去掉日期" class="headerlink" title="1.15 URL去掉日期"></a>1.15 URL去掉日期</h2><h4 id="hexo配置文件-config-yml-1"><a href="#hexo配置文件-config-yml-1" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</span><br></pre></td></tr></table></figure><p>修改为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :title&#x2F;</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="1-9-七牛图床"><a href="#1-9-七牛图床" class="headerlink" title="1.9 七牛图床"></a>1.9 七牛图床</h2><ul><li>注册七牛增加图床</li><li>增加img.weaoe.com解析</li></ul><h2 id="1-8-云音乐"><a href="#1-8-云音乐" class="headerlink" title="1.8 云音乐"></a>1.8 云音乐</h2><ul><li>增加云音乐</li></ul><h2 id="1-2-站内搜索"><a href="#1-2-站内搜索" class="headerlink" title="1.2 站内搜索"></a>1.2 站内搜索</h2><h4 id="hexo配置文件-config-yml-2"><a href="#hexo配置文件-config-yml-2" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#  path: search.xml</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure><h4 id="landscape配置文件-config-yml"><a href="#landscape配置文件-config-yml" class="headerlink" title="landscape配置文件~/_config.yml"></a>landscape配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure><h4 id="JS文件search-form-js"><a href="#JS文件search-form-js" class="headerlink" title="JS文件search_form.js"></a>JS文件search_form.js</h4><p>路径：\hexo\node_modules\hexo\lib\plugins\helper</p><p>修改为：bing.com</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#39;use strict&#39;;</span><br><span class="line"></span><br><span class="line">function searchFormHelper(options &#x3D; &#123;&#125;) &#123;</span><br><span class="line">  const &#123; config &#125; &#x3D; this;</span><br><span class="line">  const className &#x3D; options.class || &#39;search-form&#39;;</span><br><span class="line">  const &#123; text &#x3D; &#39;Search&#39;, button &#125; &#x3D; options;</span><br><span class="line"></span><br><span class="line">  return &#96;&lt;form action&#x3D;&quot;&#x2F;&#x2F;bing.com&#x2F;search&quot; method&#x3D;&quot;get&quot; accept-charset&#x3D;&quot;UTF-8&quot; class&#x3D;&quot;$&#123;className&#125;&quot;&gt;&lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;q&quot; class&#x3D;&quot;$&#123;className&#125;-input&quot;$&#123;text ? &#96; placeholder&#x3D;&quot;$&#123;text&#125;&quot;&#96; : &#39;&#39;&#125;&gt;$&#123;button ? &#96;&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;$&#123;className&#125;-submit&quot;&gt;$&#123;typeof button &#x3D;&#x3D;&#x3D; &#39;string&#39; ? button : text&#125;&lt;&#x2F;button&gt;&#96; : &#39;&#39;&#125;&lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;sitesearch&quot; value&#x3D;&quot;$&#123;config.url&#125;&quot;&gt;&lt;&#x2F;form&gt;&#96;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; searchFormHelper;</span><br></pre></td></tr></table></figure><h2 id="1-1-主题设置"><a href="#1-1-主题设置" class="headerlink" title="1.1 主题设置"></a>1.1 主题设置</h2><h3 id="landscape配置文件-config-yml-1"><a href="#landscape配置文件-config-yml-1" class="headerlink" title="landscape配置文件~/_config.yml"></a>landscape配置文件~/_config.yml</h3><h4 id="阅读更多"><a href="#阅读更多" class="headerlink" title="阅读更多"></a>阅读更多</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Content</span><br><span class="line">excerpt_link: 阅读更多</span><br><span class="line">fancybox: true</span><br></pre></td></tr></table></figure><h4 id="统计数字"><a href="#统计数字" class="headerlink" title="统计数字"></a>统计数字</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># widget behavior</span><br><span class="line">archive_type: &#39;monthly&#39;</span><br><span class="line">show_count: true</span><br></pre></td></tr></table></figure><h4 id="站点图标"><a href="#站点图标" class="headerlink" title="站点图标"></a>站点图标</h4><p>路径~\hexo\themes\landscape\source</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">favicon: &#x2F;favicon.png</span><br></pre></td></tr></table></figure><h4 id="站点banner"><a href="#站点banner" class="headerlink" title="站点banner"></a>站点banner</h4><p>路径~\hexo\themes\landscape\source\css\images</p><h2 id="1-0-Git配置"><a href="#1-0-Git配置" class="headerlink" title="1.0 Git配置"></a>1.0 Git配置</h2><h4 id="hexo配置文件-config-yml-3"><a href="#hexo配置文件-config-yml-3" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><p>方法一：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@github.com:w***e&#x2F;w***e.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@e.coding.net:a*e&#x2F;w***e.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>方法二：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">   type: git  </span><br><span class="line">   repo: </span><br><span class="line">      github: https:&#x2F;&#x2F;e.coding.net&#x2F;a*e&#x2F;w***e.git</span><br><span class="line">      coding: https:&#x2F;&#x2F;github.com&#x2F;w***e&#x2F;w***e.github.io.git</span><br><span class="line">   branch: master</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>Aoe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次劫难</title>
+    <url>/calamity/</url>
+    <content><![CDATA[<p>12.18</p>
+<p>听不清</p>
+<p>头晕、呕吐、</p>
+<p>入院</p>
+<p>突发耳聋</p>
+<p>输水</p>
+<p>吃药</p>
+<p>……</p>
+<p>12.31出院</p>
+<a id="more"></a>
+
+<p>1.6郑州两次咨询、洛阳继续咨询</p>
+<p>1.7入院</p>
+<p>打针</p>
+<p>输水</p>
+<p>1.8高压氧舱</p>
+<p>1.10核磁共振</p>
+<p>1.15重测听力</p>
+<p>出院</p>
+<p>……</p>
+]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>Chen</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大雪茫茫</title>
-      <link href="snow/"/>
-      <url>snow/</url>
-      
-        <content type="html"><![CDATA[<p>今年第一场大雪</p><p>不是那么猛烈</p>]]></content>
-      
-      
+      <tags>
+        <tag>健康</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>期末考试</title>
+    <url>/finalexam/</url>
+    <content><![CDATA[<p>今天是大宝第一学期期末考试，早上难得早起，比平时早了半小时。</p>
+<p>平时在家做作业比较粗心，没有认真检查，在校门口有叮嘱了一次，希望考试认认真真。</p>
+]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>YuYu</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 天气 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>此时此刻</title>
-      <link href="moment/"/>
-      <url>moment/</url>
-      
-        <content type="html"><![CDATA[<p>早上</p><p>有人休息</p><p>有人起床</p><p>有人值班</p><p>有人打扫</p><p>有人做饭</p><p>有人看病</p><p>有人上班</p><p>而我</p><p>高压氧舱</p>]]></content>
-      
-      
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一耳光</title>
+    <url>/slapped/</url>
+    <content><![CDATA[<p>周末回家晚上该睡觉的时候，不让大宝看电视，跳的厉害，还反手一耳光</p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>YuYu</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Aoe </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>好日子</title>
-      <link href="goodday/"/>
-      <url>goodday/</url>
-      
-        <content type="html"><![CDATA[<p>我们努力把自己的日子过成好日子</p>]]></content>
-      
-      
+      <tags>
+        <tag>成长</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我陪着</title>
+    <url>/staywithyou/</url>
+    <content><![CDATA[<p>我们只要努力治疗</p>
+<p>奇迹总会发生</p>
+<p>我会一直陪着你…</p>
+]]></content>
       <categories>
-          
-          <category> Chen </category>
-          
+        <category>Chen</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 生活 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>默默陌生了</title>
-      <link href="strange/"/>
-      <url>strange/</url>
-      
-        <content type="html"><![CDATA[<p>周六和宝贝一起回家，默默和我们也不亲近了</p>]]></content>
-      
-      
+      <tags>
+        <tag>健康</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>此时此刻</title>
+    <url>/moment/</url>
+    <content><![CDATA[<p>早上</p>
+<p>有人休息</p>
+<p>有人起床</p>
+<p>有人值班</p>
+<p>有人打扫</p>
+<p>有人做饭</p>
+<p>有人看病</p>
+<p>有人上班</p>
+<p>而我</p>
+<p>高压氧舱</p>
+]]></content>
       <categories>
-          
-          <category> MoMo </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 成长 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一耳光</title>
-      <link href="slapped/"/>
-      <url>slapped/</url>
-      
-        <content type="html"><![CDATA[<p>周末回家晚上该睡觉的时候，不让大宝看电视，跳的厉害，还反手一耳光</p>]]></content>
-      
-      
+      <tags>
+        <tag>Aoe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好日子</title>
+    <url>/goodday/</url>
+    <content><![CDATA[<p>我们努力把自己的日子过成好日子</p>
+]]></content>
       <categories>
-          
-          <category> YuYu </category>
-          
+        <category>Chen</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 成长 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分身乏术</title>
-      <link href="lackofavatar/"/>
-      <url>lackofavatar/</url>
-      
-        <content type="html"><![CDATA[<p>宝贝今天在医院，需要打针、输水、高压氧舱等治疗</p><p>大宝今天需要开家长会，还要游泳</p><p>小宝需要专人带着</p><p>三个人需要三个人</p><p>下午我赶到单位上班，宝贝一个人</p>]]></content>
-      
-      
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大雪茫茫</title>
+    <url>/snow/</url>
+    <content><![CDATA[<p>今年第一场大雪</p>
+<p>不是那么猛烈</p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Aoe </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>宝贝 大宝 小宝</title>
-      <link href="baby/"/>
-      <url>baby/</url>
-      
-        <content type="html"><![CDATA[<p><img src="http://img.weaoe.com/home.jpg" alt="home"></p>]]></content>
-      
-      
+      <tags>
+        <tag>天气</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>默默陌生了</title>
+    <url>/strange/</url>
+    <content><![CDATA[<p>周六和宝贝一起回家，默默和我们也不亲近了</p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>MoMo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Aoe </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我陪着</title>
-      <link href="staywithyou/"/>
-      <url>staywithyou/</url>
-      
-        <content type="html"><![CDATA[<p>我们只要努力治疗</p><p>奇迹总会发生</p><p>我会一直陪着你…</p>]]></content>
-      
-      
+      <tags>
+        <tag>成长</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如此工作</title>
+    <url>/work/</url>
+    <content><![CDATA[<p>早上出门</p>
+<p>遇见保洁</p>
+<p>遇见保安</p>
+<p>遇见晨练的人</p>
+<p>因为大家都已经放假了</p>
+<p>心情好一点吧</p>
+<p>今天最后一天</p>
+]]></content>
       <categories>
-          
-          <category> Chen </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 健康 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一次劫难</title>
-      <link href="calamity/"/>
-      <url>calamity/</url>
-      
-        <content type="html"><![CDATA[<p>12.18</p><p>听不清</p><p>头晕、呕吐、</p><p>入院</p><p>突发耳聋</p><p>输水</p><p>吃药</p><p>……</p><p>12.31出院</p><a id="more"></a><p>1.6郑州两次咨询、洛阳继续咨询</p><p>1.7入院</p><p>打针</p><p>输水</p><p>1.8高压氧舱</p><p>1.10核磁共振</p><p>1.15重测听力</p><p>出院</p><p>……</p>]]></content>
-      
-      
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>闰年二月</title>
+    <url>/february/</url>
+    <content><![CDATA[<p>四年一次</p>
+<p>值得记录一下</p>
+<p>从一月下旬开始的新冠病毒</p>
+<p>不能出门</p>
+<p>不能走亲访友</p>
+<p>没有交通</p>
+<p>没有物资</p>
+<p>都需要抢购</p>
+<a id="more"></a>
+
+<p>不能开学</p>
+<p>不能上班</p>
+<p>出门口罩</p>
+<p>进门消毒</p>
+<p>等待疫情结束</p>
+]]></content>
       <categories>
-          
-          <category> Chen </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 健康 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>期末考试</title>
-      <link href="finalexam/"/>
-      <url>finalexam/</url>
-      
-        <content type="html"><![CDATA[<p>今天是大宝第一学期期末考试，早上难得早起，比平时早了半小时。</p><p>平时在家做作业比较粗心，没有认真检查，在校门口有叮嘱了一次，希望考试认认真真。</p>]]></content>
-      
-      
+      <tags>
+        <tag>节日</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>季姬击鸡记</title>
+    <url>/ji/</url>
+    <content><![CDATA[<p>季姬寂，</p>
+<p>集鸡，</p>
+<p>鸡即棘鸡。</p>
+<p>棘鸡饥叽，</p>
+<p>季姬及箕稷济鸡。</p>
+<a id="more"></a>
+
+<p>鸡既济，</p>
+<p>跻姬笈，</p>
+<p>季姬忌，</p>
+<p>急咭鸡，</p>
+<p>鸡急，</p>
+<p>继圾几，</p>
+<p>季姬急，</p>
+<p>即籍箕击鸡，</p>
+<p>箕疾击几伎，</p>
+<p>伎即齑，</p>
+<p>鸡叽集几基，</p>
+<p>季姬急极屐击鸡，</p>
+<p>鸡既殛，</p>
+<p>季姬激，</p>
+<p>即记《季姬击鸡记》。</p>
+]]></content>
       <categories>
-          
-          <category> YuYu </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 学习 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>腊八节</title>
-      <link href="labafestival/"/>
-      <url>labafestival/</url>
-      
-        <content type="html"><![CDATA[<p>到了腊八节离过年就很近了</p><p>这几天天气也格外的冷</p>]]></content>
-      
-      
+      <tags>
+        <tag>小众</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>七年</title>
+    <url>/sevenyear/</url>
+    <content><![CDATA[<p>七年了，应该送个礼物。</p>
+]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>FG</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 节日 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>再见2019，你好2020</title>
-      <link href="newyear/"/>
-      <url>newyear/</url>
-      
-        <content type="html"><![CDATA[<h2 id="再见2019"><a href="#再见2019" class="headerlink" title="再见2019"></a>再见2019</h2><p>让烦恼随你而去</p><h2 id="你好2020"><a href="#你好2020" class="headerlink" title="你好2020"></a>你好2020</h2><p>愿未来更加美好</p>]]></content>
-      
-      
+      <tags>
+        <tag>节日</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>养成好性格</title>
+    <url>/null/</url>
+    <content><![CDATA[<p>好的性格</p>
+<p>不仅改变自己</p>
+<p>更重要的是影响孩子</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>更新说明</title>
+    <url>/update/</url>
+    <content><![CDATA[<hr>
+<h2 id="3-27-URL改为urlname"><a href="#3-27-URL改为urlname" class="headerlink" title="3.27 URL改为urlname"></a>3.27 URL改为urlname</h2><h4 id="hexo配置文件-config-yml"><a href="#hexo配置文件-config-yml" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :title&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>修改为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :urlname&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h4 id="更改模版：增加URLname、update以及文件名增加日期"><a href="#更改模版：增加URLname、update以及文件名增加日期" class="headerlink" title="更改模版：增加URLname、update以及文件名增加日期"></a>更改模版：增加URLname、update以及文件名增加日期</h4><h4 id="更改文件：重命名所有文件的标题"><a href="#更改文件：重命名所有文件的标题" class="headerlink" title="更改文件：重命名所有文件的标题"></a>更改文件：重命名所有文件的标题</h4><h2 id="1-15-URL去掉日期"><a href="#1-15-URL去掉日期" class="headerlink" title="1.15 URL去掉日期"></a>1.15 URL去掉日期</h2><h4 id="hexo配置文件-config-yml-1"><a href="#hexo配置文件-config-yml-1" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>修改为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :title&#x2F;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="1-9-七牛图床"><a href="#1-9-七牛图床" class="headerlink" title="1.9 七牛图床"></a>1.9 七牛图床</h2><ul>
+<li>注册七牛增加图床</li>
+<li>增加img.weaoe.com解析</li>
+</ul>
+<h2 id="1-8-云音乐"><a href="#1-8-云音乐" class="headerlink" title="1.8 云音乐"></a>1.8 云音乐</h2><ul>
+<li>增加云音乐</li>
+</ul>
+<h2 id="1-2-站内搜索"><a href="#1-2-站内搜索" class="headerlink" title="1.2 站内搜索"></a>1.2 站内搜索</h2><h4 id="hexo配置文件-config-yml-2"><a href="#hexo配置文件-config-yml-2" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#  path: search.xml</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<h4 id="landscape配置文件-config-yml"><a href="#landscape配置文件-config-yml" class="headerlink" title="landscape配置文件~/_config.yml"></a>landscape配置文件~/_config.yml</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Local search</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<h4 id="JS文件search-form-js"><a href="#JS文件search-form-js" class="headerlink" title="JS文件search_form.js"></a>JS文件search_form.js</h4><p>路径：\hexo\node_modules\hexo\lib\plugins\helper</p>
+<p>修改为：bing.com</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#39;use strict&#39;;</span><br><span class="line"></span><br><span class="line">function searchFormHelper(options &#x3D; &#123;&#125;) &#123;</span><br><span class="line">  const &#123; config &#125; &#x3D; this;</span><br><span class="line">  const className &#x3D; options.class || &#39;search-form&#39;;</span><br><span class="line">  const &#123; text &#x3D; &#39;Search&#39;, button &#125; &#x3D; options;</span><br><span class="line"></span><br><span class="line">  return &#96;&lt;form action&#x3D;&quot;&#x2F;&#x2F;bing.com&#x2F;search&quot; method&#x3D;&quot;get&quot; accept-charset&#x3D;&quot;UTF-8&quot; class&#x3D;&quot;$&#123;className&#125;&quot;&gt;&lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;q&quot; class&#x3D;&quot;$&#123;className&#125;-input&quot;$&#123;text ? &#96; placeholder&#x3D;&quot;$&#123;text&#125;&quot;&#96; : &#39;&#39;&#125;&gt;$&#123;button ? &#96;&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;$&#123;className&#125;-submit&quot;&gt;$&#123;typeof button &#x3D;&#x3D;&#x3D; &#39;string&#39; ? button : text&#125;&lt;&#x2F;button&gt;&#96; : &#39;&#39;&#125;&lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;sitesearch&quot; value&#x3D;&quot;$&#123;config.url&#125;&quot;&gt;&lt;&#x2F;form&gt;&#96;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; searchFormHelper;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="1-1-主题设置"><a href="#1-1-主题设置" class="headerlink" title="1.1 主题设置"></a>1.1 主题设置</h2><h3 id="landscape配置文件-config-yml-1"><a href="#landscape配置文件-config-yml-1" class="headerlink" title="landscape配置文件~/_config.yml"></a>landscape配置文件~/_config.yml</h3><h4 id="阅读更多"><a href="#阅读更多" class="headerlink" title="阅读更多"></a>阅读更多</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Content</span><br><span class="line">excerpt_link: 阅读更多</span><br><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
+
+<h4 id="统计数字"><a href="#统计数字" class="headerlink" title="统计数字"></a>统计数字</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># widget behavior</span><br><span class="line">archive_type: &#39;monthly&#39;</span><br><span class="line">show_count: true</span><br></pre></td></tr></table></figure>
+
+<h4 id="站点图标"><a href="#站点图标" class="headerlink" title="站点图标"></a>站点图标</h4><p>路径~\hexo\themes\landscape\source</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon: &#x2F;favicon.png</span><br></pre></td></tr></table></figure>
+
+<h4 id="站点banner"><a href="#站点banner" class="headerlink" title="站点banner"></a>站点banner</h4><p>路径~\hexo\themes\landscape\source\css\images</p>
+<h2 id="1-0-Git配置"><a href="#1-0-Git配置" class="headerlink" title="1.0 Git配置"></a>1.0 Git配置</h2><h4 id="hexo配置文件-config-yml-3"><a href="#hexo配置文件-config-yml-3" class="headerlink" title="hexo配置文件~/_config.yml"></a>hexo配置文件~/_config.yml</h4><p>方法一：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@github.com:w***e&#x2F;w***e.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">- type: git</span><br><span class="line">  repo: git@e.coding.net:a*e&#x2F;w***e.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>方法二：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">   type: git  </span><br><span class="line">   repo: </span><br><span class="line">      github: https:&#x2F;&#x2F;e.coding.net&#x2F;a*e&#x2F;w***e.git</span><br><span class="line">      coding: https:&#x2F;&#x2F;github.com&#x2F;w***e&#x2F;w***e.github.io.git</span><br><span class="line">   branch: master</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-          
-          <category> Admin </category>
-          
+        <category>Admin</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 节日 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>心之何如</title>
-      <link href="heart/"/>
-      <url>heart/</url>
-      
-        <content type="html"><![CDATA[<h4 id="心之何如"><a href="#心之何如" class="headerlink" title="心之何如"></a>心之何如</h4><h4 id="有似万丈迷津"><a href="#有似万丈迷津" class="headerlink" title="有似万丈迷津"></a>有似万丈迷津</h4><h4 id="遥亘千里"><a href="#遥亘千里" class="headerlink" title="遥亘千里"></a>遥亘千里</h4><h5 id="其中并无舟子可以渡人"><a href="#其中并无舟子可以渡人" class="headerlink" title="其中并无舟子可以渡人"></a>其中并无舟子可以渡人</h5><a id="more"></a><h5 id="除了自渡"><a href="#除了自渡" class="headerlink" title="除了自渡"></a>除了自渡</h5><h6 id="他人爱莫能助"><a href="#他人爱莫能助" class="headerlink" title="他人爱莫能助"></a>他人爱莫能助</h6>]]></content>
-      
-      
+      <tags>
+        <tag>更新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>外面的世界</title>
+    <url>/outworld/</url>
+    <content><![CDATA[<p>平时都很少出门的默默</p>
+<p>今年因为疫情原因更是不能出门</p>
+<p>现在可以外出活动</p>
+<p>这已经是默默最想的事情了</p>
+]]></content>
       <categories>
-          
-          <category> FG </category>
-          
+        <category>MoMo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Aoe </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>成长</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>早上跑步</title>
+    <url>/null/</url>
+    <content><![CDATA[<p>大宝第一天早起跑步</p>
+<p>陪着妈妈</p>
+<p>还有妈妈的妈妈</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>开学了</title>
+    <url>/null/</url>
+    <content><![CDATA[<p>开学了</p>
+<p>总是在开学前熬夜完成假期作业</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>羽羽的烦恼</title>
+    <url>/null/</url>
+    <content><![CDATA[<p>早上不想起床</p>
+<p>早上不想上学</p>
+<p>早上不想吃饭</p>
+<p>中午不想去托班</p>
+<p>晚上不想写作业</p>
+<p>晚上不想睡觉</p>
+]]></content>
+  </entry>
 </search>
