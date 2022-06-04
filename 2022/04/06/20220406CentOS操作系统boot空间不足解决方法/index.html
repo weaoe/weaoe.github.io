@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>CentOS操作系统boot空间不足的解决方法 | 河洛先生</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下： 1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS操作系统boot空间不足的解决方法">
+<meta property="og:url" content="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="河洛先生">
+<meta property="og:description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下： 1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁r">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-06T14:12:11.000Z">
+<meta property="article:modified_time" content="2022-06-03T14:40:03.591Z">
+<meta property="article:author" content="河洛先生">
+<meta property="article:tag" content="CentOS">
+<meta property="article:tag" content="System">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="shortcut icon" href="/css/images/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">河洛先生</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个没有味道的人</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">时光机</a>
+        
+          <a class="main-nav-link" href="/categories/Linux/">Linux</a>
+        
+          <a class="main-nav-link" href="/categories/Windows/">Windows</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//bing.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weaoe.org"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20220406CentOS操作系统boot空间不足解决方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2022-04-06T14:12:11.000Z" itemprop="datePublished">2022-04-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      CentOS操作系统boot空间不足的解决方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下：</p>
+<h3 id="1、查看正在使用的内核"><a href="#1、查看正在使用的内核" class="headerlink" title="1、查看正在使用的内核"></a>1、查看正在使用的内核</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//显示内容简洁</span><br><span class="line">uname -r</span><br><span class="line">//显示内容详细</span><br><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、查看系统的其他内核"><a href="#2、查看系统的其他内核" class="headerlink" title="2、查看系统的其他内核"></a>2、查看系统的其他内核</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//显示内容简洁</span><br><span class="line">rpm -q kernel</span><br><span class="line">//显示内容详细</span><br><span class="line">rpm -qa | grep kernel</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、删除不必要的内核"><a href="#3、删除不必要的内核" class="headerlink" title="3、删除不必要的内核"></a>3、删除不必要的内核</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//通过yum或rpm删除不必要的内核</span><br><span class="line">yum remove kernel-3.10.0-229.14.1.el7</span><br><span class="line">rpm -e kernel-3.10.0-229.14.1.el7.x86_64</span><br><span class="line">//删除后查看空间使用情况</span><br><span class="line">df -lh</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" data-id="cl3zchzb5000eigdt4u7y4df6" data-title="CentOS操作系统boot空间不足的解决方法" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/System/" rel="tag">System</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/04/06/20220406Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          Windows操作系统远程管理服务
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AEDotNet%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">CentOS操作系统设置DotNet项目自动运行</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CentOS/" style="font-size: 20px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 12.5px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 12.5px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 10px;">Oracle</a> <a href="/tags/Software/" style="font-size: 12.5px;">Software</a> <a href="/tags/System/" style="font-size: 17.5px;">System</a> <a href="/tags/UOS/" style="font-size: 12.5px;">UOS</a> <a href="/tags/VMware/" style="font-size: 12.5px;">VMware</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">CentOS安装cockpit管理工具</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/">xshell连接Windows乱码和退格键无效</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1%E5%99%A8/">Windows操作系统部署OpenSSH服务器</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/">常用软件收藏和下载</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux操作系统常用命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 河洛先生<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">时光机</a>
+  
+    <a href="/categories/Linux/" class="mobile-nav-link">Linux</a>
+  
+    <a href="/categories/Windows/" class="mobile-nav-link">Windows</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
