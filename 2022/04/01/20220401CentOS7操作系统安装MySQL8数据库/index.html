@@ -6,19 +6,21 @@
   
   <title>CentOS7安装MySQL8数据库 | 河洛先生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="CentOS7操作系统安装MySQL8数据库步骤： 1、上传MySQL文件到服务器；2、删除服务器的MariaDB12查看命令：rpm -qa|grep mariadb删除命令：rpm -e --nodeps mariadb-libs  3、解压缩MySQL安装包4、安装MySQL安装包1234567891011&#x2F;&#x2F;必须安装rpm -ivh mysql-community-common-8.0.2">
+  <meta name="description" content="CentOS7操作系统安装MySQL8数据库步骤：  1、上传MySQL文件到服务器；2、删除服务器的MariaDB12查看命令：rpm -qa|grep mariadb删除命令：rpm -e --nodeps mariadb-libs  3、解压缩MySQL安装包4、安装MySQL安装包1234567891011&#x2F;&#x2F;必须安装rpm -ivh mysql-community-common-8.0.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS7安装MySQL8数据库">
 <meta property="og:url" content="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
 <meta property="og:site_name" content="河洛先生">
-<meta property="og:description" content="CentOS7操作系统安装MySQL8数据库步骤： 1、上传MySQL文件到服务器；2、删除服务器的MariaDB12查看命令：rpm -qa|grep mariadb删除命令：rpm -e --nodeps mariadb-libs  3、解压缩MySQL安装包4、安装MySQL安装包1234567891011&#x2F;&#x2F;必须安装rpm -ivh mysql-community-common-8.0.2">
+<meta property="og:description" content="CentOS7操作系统安装MySQL8数据库步骤：  1、上传MySQL文件到服务器；2、删除服务器的MariaDB12查看命令：rpm -qa|grep mariadb删除命令：rpm -e --nodeps mariadb-libs  3、解压缩MySQL安装包4、安装MySQL安装包1234567891011&#x2F;&#x2F;必须安装rpm -ivh mysql-community-common-8.0.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/06/06/wYmoFPV5Cb67fEs.png">
 <meta property="article:published_time" content="2022-04-01T14:16:27.000Z">
-<meta property="article:modified_time" content="2022-06-03T14:38:14.346Z">
+<meta property="article:modified_time" content="2022-06-06T05:50:31.592Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="CentOS">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/06/06/wYmoFPV5Cb67fEs.png">
   
   
     <link rel="shortcut icon" href="/css/images/favicon.png">
@@ -101,6 +103,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>CentOS7操作系统安装MySQL8数据库步骤：</p>
+<p><img src="https://s2.loli.net/2022/06/06/wYmoFPV5Cb67fEs.png" alt="mysql"></p>
 <h3 id="1、上传MySQL文件到服务器；"><a href="#1、上传MySQL文件到服务器；" class="headerlink" title="1、上传MySQL文件到服务器；"></a>1、上传MySQL文件到服务器；</h3><h3 id="2、删除服务器的MariaDB"><a href="#2、删除服务器的MariaDB" class="headerlink" title="2、删除服务器的MariaDB"></a>2、删除服务器的MariaDB</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看命令：rpm -qa|grep mariadb</span><br><span class="line">删除命令：rpm -e --nodeps mariadb-libs</span><br></pre></td></tr></table></figure>
 
 <h3 id="3、解压缩MySQL安装包"><a href="#3、解压缩MySQL安装包" class="headerlink" title="3、解压缩MySQL安装包"></a>3、解压缩MySQL安装包</h3><h3 id="4、安装MySQL安装包"><a href="#4、安装MySQL安装包" class="headerlink" title="4、安装MySQL安装包"></a>4、安装MySQL安装包</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//必须安装</span><br><span class="line">rpm -ivh mysql-community-common-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-client-plugins-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-libs-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-client-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-server-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-libs-compat-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">//非必须安装</span><br><span class="line">rpm -ivh mysql-community-embedded-compat-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-devel-8.0.26-1.el7.x86_64.rpm</span><br><span class="line">rpm -ivh mysql-community-test-8.0.26-1.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
@@ -115,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl422y9x200049gdthv7ubyrn" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42bio5z0004k8dtcby04tec" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
       
       
       
