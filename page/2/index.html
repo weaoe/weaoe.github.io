@@ -107,7 +107,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/" data-id="cl42bio6f000kk8dt6vyv0t3l" data-title="CentOS操作系统部署DotNet项目" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/" data-id="cl42cmf7d000hiodt3alicrii" data-title="CentOS操作系统部署DotNet项目" class="article-share-link">分享</a>
       
       
       
@@ -148,6 +148,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>CentOS操作系统安装DM达梦数据库步骤和注意事项；</p>
+<p><img src="https://s2.loli.net/2022/06/06/jnbl8g3ARFTU1K2.png" alt="damenglogo"></p>
 <h3 id="1、创建用户和组"><a href="#1、创建用户和组" class="headerlink" title="1、创建用户和组"></a>1、创建用户和组</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 创建安装用户组 dinstall。</span><br><span class="line">groupadd -g 12349 dinstall</span><br><span class="line">2. 创建安装用户 dmdba。</span><br><span class="line">useradd -u 12345 -g dinstall -m -d /home/dmdba -s /bin/bash dmdba</span><br><span class="line">3. 初始化用户密码。nitdDH***6888</span><br><span class="line">passwd dmdba</span><br></pre></td></tr></table></figure>
 
 <p>dmdba用户密码：nitdDH***6888</p>
@@ -161,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42bio620006k8dtb53n89c3" data-title="CentOS操作系统安装DM达梦数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf700006iodtaexfb61t" data-title="CentOS操作系统安装DM达梦数据库" class="article-share-link">分享</a>
       
       
       
@@ -218,7 +219,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42bio66000bk8dt5dazeu4g" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf76000aiodt4wv9945q" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
       
       
       
@@ -259,6 +260,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>VMware虚拟机安装统信UOS操作系统后的一些设置；</p>
+<p><img src="https://s2.loli.net/2022/06/06/ahxdVYX52FOMpsB.jpg" alt="UOS"></p>
 <h3 id="1、启用ssh连接"><a href="#1、启用ssh连接" class="headerlink" title="1、启用ssh连接"></a>1、启用ssh连接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openssh-server  //默认已安装</span><br><span class="line">systemctl enable ssh  //设置开机启动</span><br><span class="line">systemctl status ssh</span><br><span class="line">systemctl start ssh</span><br><span class="line">systemctl stop ssh</span><br><span class="line">systemctl restart ssh</span><br><span class="line">systemctl reload ssh</span><br></pre></td></tr></table></figure>
 
 <h3 id="2、启用root的ssh连接，默认root不能ssh连接"><a href="#2、启用root的ssh连接，默认root不能ssh连接" class="headerlink" title="2、启用root的ssh连接，默认root不能ssh连接"></a>2、启用root的ssh连接，默认root不能ssh连接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">编辑sshd配置文件,将#PermitRootLogin prohibit-password的#删除，将prohibit-password更改为yes</span><br><span class="line">vi /etc/ssh/sshd_config</span><br><span class="line">重启ssh服务</span><br><span class="line">systemctl restart ssh</span><br></pre></td></tr></table></figure>
@@ -267,7 +269,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42bio64000ak8dt0e3rflvt" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42cmf740009iodtem35htj3" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -308,6 +310,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>CentOS7操作系统安装Oracle11G数据库步骤：</p>
+<p><img src="https://s2.loli.net/2022/06/06/vkiqp7ATZIMhdCK.png" alt="oracle"></p>
 <h3 id="1、创建用户和组"><a href="#1、创建用户和组" class="headerlink" title="1、创建用户和组"></a>1、创建用户和组</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">groupadd oinstall</span><br><span class="line">groupadd dba</span><br><span class="line">useradd -g oinstall -g dba -m oracle</span><br><span class="line">passwd oracle</span><br><span class="line">id oracle</span><br></pre></td></tr></table></figure>
 
 <p>Oracle用户密码：nitd***6888</p>
@@ -323,7 +326,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42bio610005k8dtg5qwbc2h" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf6z0005iodtbxjxfkdm" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
       
       
       
@@ -378,7 +381,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42bio5z0004k8dtcby04tec" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf6y0004iodt7xhf6d4e" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
       
       
       
@@ -434,7 +437,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42bio5u0001k8dt3y3m79oj" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42cmf6n0000iodt5zue9las" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -501,7 +504,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl42bio5o0000k8dt0fxqdkl5" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl42cmf6t0001iodtffz75r68" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
       
       
       
