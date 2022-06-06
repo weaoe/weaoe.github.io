@@ -6,19 +6,21 @@
   
   <title>CentOS操作系统boot空间不足的解决方法 | 河洛先生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下： 1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁r">
+  <meta name="description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下：  1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS操作系统boot空间不足的解决方法">
 <meta property="og:url" content="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="河洛先生">
-<meta property="og:description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下： 1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁r">
+<meta property="og:description" content="​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下：  1、查看正在使用的内核1234&#x2F;&#x2F;显示内容简洁uname -r&#x2F;&#x2F;显示内容详细uname -a  2、查看系统的其他内核1234&#x2F;&#x2F;显示内容简洁">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png">
 <meta property="article:published_time" content="2022-04-06T14:12:11.000Z">
-<meta property="article:modified_time" content="2022-06-03T14:40:03.591Z">
+<meta property="article:modified_time" content="2022-06-06T06:26:58.075Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="CentOS">
 <meta property="article:tag" content="System">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png">
   
   
     <link rel="shortcut icon" href="/css/images/favicon.png">
@@ -101,6 +103,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>​		boot目录主要是存放一些系统的内核的配置文件，以及启动管理程序GRUB的目录，在分区的时候分了200M,结果在升级几次内核之后就发现boot空间满了，更新时提示“9 MB 以上的空间至少需要在文件系统 &#x2F;boot 上”，解决方法如下：</p>
+<p><img src="https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png"></p>
 <h3 id="1、查看正在使用的内核"><a href="#1、查看正在使用的内核" class="headerlink" title="1、查看正在使用的内核"></a>1、查看正在使用的内核</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//显示内容简洁</span><br><span class="line">uname -r</span><br><span class="line">//显示内容详细</span><br><span class="line">uname -a</span><br></pre></td></tr></table></figure>
 
 <h3 id="2、查看系统的其他内核"><a href="#2、查看系统的其他内核" class="headerlink" title="2、查看系统的其他内核"></a>2、查看系统的其他内核</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//显示内容简洁</span><br><span class="line">rpm -q kernel</span><br><span class="line">//显示内容详细</span><br><span class="line">rpm -qa | grep kernel</span><br></pre></td></tr></table></figure>
@@ -111,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" data-id="cl42cmf7a000eiodth5jc79yn" data-title="CentOS操作系统boot空间不足的解决方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" data-id="cl42dhf3r000epsdthha52r1v" data-title="CentOS操作系统boot空间不足的解决方法" class="article-share-link">分享</a>
       
       
       

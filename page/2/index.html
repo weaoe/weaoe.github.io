@@ -99,6 +99,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>CentOS操作系统部署DotNet项目的两种方法，以DoeNet5项目为例</p>
+<p><img src="https://s2.loli.net/2022/06/06/7faubgJelkFACqx.jpg" alt="dotnet"></p>
 <h3 id="方法一：项目依赖运行时环境"><a href="#方法一：项目依赖运行时环境" class="headerlink" title="方法一：项目依赖运行时环境"></a>方法一：项目依赖运行时环境</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//添加签名密钥</span><br><span class="line">sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm</span><br><span class="line">//安装.Net5 SDK</span><br><span class="line">sudo yum install dotnet-sdk-5.0</span><br><span class="line">//安装.Net5运行时--无需执行</span><br><span class="line">sudo yum install aspnetcore-runtime-5.0</span><br><span class="line">sudo yum install dotnet-runtime-5.0</span><br><span class="line">//安装证书</span><br><span class="line">dotnet dev-certs https</span><br><span class="line">//安装证书（仅限Windows和macos）</span><br><span class="line">dotnet dev-certs https --trust</span><br><span class="line">//运行.Net5访问命令</span><br><span class="line">dotnet Demo.Net.Core.dll --urls=&quot;http://*:8081;http://*:8082&quot; --environment=Development</span><br><span class="line">//解决验证码无法显示的问题</span><br><span class="line">sudo yum install libc6-dev </span><br><span class="line">sudo yum install libgdiplus</span><br></pre></td></tr></table></figure>
 
 <h3 id="方法二：项目集成运行环境"><a href="#方法二：项目集成运行环境" class="headerlink" title="方法二：项目集成运行环境"></a>方法二：项目集成运行环境</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//通过工具将发布的独立运行的文件上传到Linux系统，进入项目文件夹后给项目文件添加权限</span><br><span class="line">chmod 755 ./EIVApp</span><br><span class="line">//运行项目</span><br><span class="line">./EIVApp</span><br><span class="line">//如果提示“Couldn&#x27;t find a valid ICU package installed on the system...”,请安装依赖项安装包</span><br><span class="line">sudo rpm -ivh libicu-50.2-4.el7_7.x86_64.rpm</span><br></pre></td></tr></table></figure>
@@ -107,7 +108,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/" data-id="cl42cmf7d000hiodt3alicrii" data-title="CentOS操作系统部署DotNet项目" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/" data-id="cl42dhf3v000lpsdtdly30nih" data-title="CentOS操作系统部署DotNet项目" class="article-share-link">分享</a>
       
       
       
@@ -162,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf700006iodtaexfb61t" data-title="CentOS操作系统安装DM达梦数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42dhf3i0005psdt19h0gis6" data-title="CentOS操作系统安装DM达梦数据库" class="article-share-link">分享</a>
       
       
       
@@ -203,6 +204,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>统信UOS操作系统安装MySQL8数据库流程和注意事项：</p>
+<p><img src="https://s2.loli.net/2022/06/06/ahxdVYX52FOMpsB.jpg"></p>
 <h3 id="1、安装依赖项"><a href="#1、安装依赖项" class="headerlink" title="1、安装依赖项"></a>1、安装依赖项</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i libmecab2_0.996-1.2ubuntu1_amd64.deb</span><br></pre></td></tr></table></figure>
 
 <h3 id="2、安装MySQL安装包"><a href="#2、安装MySQL安装包" class="headerlink" title="2、安装MySQL安装包"></a>2、安装MySQL安装包</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i mysql-common_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-community-client-plugins_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i libmysqlclient21_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i libmysqlclient-dev_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-community-client-core_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-community-client_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-community-server-core_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-client_8.0.26-1debian10_amd64.deb</span><br><span class="line">sudo dpkg -i mysql-community-server_8.0.26-1debian10_amd64.deb</span><br></pre></td></tr></table></figure>
@@ -219,7 +221,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf76000aiodt4wv9945q" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42dhf3m000apsdth2d37gl2" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
       
       
       
@@ -269,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42cmf740009iodtem35htj3" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42dhf3l0009psdt8wl61er9" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -326,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf6z0005iodtbxjxfkdm" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42dhf3j0006psdtatmsae6x" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
       
       
       
@@ -381,7 +383,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42cmf6y0004iodt7xhf6d4e" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl42dhf3g0004psdthnyq00ju" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
       
       
       
@@ -437,7 +439,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42cmf6n0000iodt5zue9las" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl42dhf350000psdt1tzg73np" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -504,7 +506,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl42cmf6t0001iodtffz75r68" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl42dhf3c0001psdtcxn06ozh" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
       
       
       
