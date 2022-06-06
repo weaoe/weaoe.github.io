@@ -9,6 +9,8 @@ tags:
 
 通过cockpit管理Linux服务器。
 
+![](https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png)
+
 ### 1、安装cockpit软件包
 
 ```

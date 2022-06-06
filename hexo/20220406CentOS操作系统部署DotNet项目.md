@@ -9,6 +9,8 @@ tags:
 
 CentOS操作系统部署DotNet项目的两种方法，以DoeNet5项目为例
 
+![dotnet](https://s2.loli.net/2022/06/06/7faubgJelkFACqx.jpg)
+
 ### 方法一：项目依赖运行时环境
 
 ```

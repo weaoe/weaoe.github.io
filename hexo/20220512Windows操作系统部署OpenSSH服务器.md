@@ -9,6 +9,8 @@ tags:
 
 通过OpenSSH管理Windows服务器。
 
+![SSH](https://s2.loli.net/2022/06/06/XilHBFIkQxRvf6U.png)
+
 ### 1、下载OpenSSH
 
 - 下载地址：https://github.com/PowerShell/Win32-OpenSSH/releases

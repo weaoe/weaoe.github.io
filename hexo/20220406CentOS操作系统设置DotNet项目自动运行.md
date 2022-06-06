@@ -9,6 +9,8 @@ tags:
 
 CentOS操作系统部署DotNet项目并设置开机自动运行的方法：
 
+![dotnet](https://s2.loli.net/2022/06/06/7faubgJelkFACqx.jpg)
+
 ### 方法一：通过服务运行，项目依赖运行时环境
 
 ```

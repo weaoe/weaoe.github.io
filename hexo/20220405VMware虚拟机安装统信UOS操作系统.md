@@ -9,6 +9,8 @@ tags:
 
 VMware虚拟机安装统信UOS操作系统后的一些设置；
 
+![UOS](https://s2.loli.net/2022/06/06/ahxdVYX52FOMpsB.jpg)
+
 ### 1、启用ssh连接
 
 ```
