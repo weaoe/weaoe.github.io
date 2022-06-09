@@ -39,4 +39,4 @@ rpm -e kernel-3.10.0-229.14.1.el7.x86_64
 df -lh
 ```
 
-![](https://s2.loli.net/2022/06/07/lZYw8sgxpPcV7WO.png)
+<img src="https://s2.loli.net/2022/06/07/lZYw8sgxpPcV7WO.png" style="zoom:80%;" />
