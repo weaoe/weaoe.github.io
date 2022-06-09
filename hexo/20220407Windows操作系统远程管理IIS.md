@@ -9,7 +9,7 @@ tags:
 
 远程管理Windows服务器的iis系统服务，在无需远程服务器的情况下启动、停止、查询IIS服务。
 
-![IIS](https://s2.loli.net/2022/06/06/AwjHuEGDgPKLNb7.jpg)
+<img src="https://s2.loli.net/2022/06/06/AwjHuEGDgPKLNb7.jpg" alt="IIS" style="zoom: 80%;" />
 
 ### 1、启动IIS
 

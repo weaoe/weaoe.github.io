@@ -9,7 +9,7 @@ tags:
 
 CentOS7操作系统安装MySQL8数据库步骤：
 
-![mysql](https://s2.loli.net/2022/06/06/wYmoFPV5Cb67fEs.png)
+<img src="https://s2.loli.net/2022/06/06/wYmoFPV5Cb67fEs.png" alt="mysql" style="zoom:33%;" />
 
 ### 1、上传MySQL文件到服务器；
 

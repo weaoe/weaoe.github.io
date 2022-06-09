@@ -9,7 +9,7 @@ tags:
 
 通过OpenSSH管理Windows服务器。
 
-![SSH](https://s2.loli.net/2022/06/06/XilHBFIkQxRvf6U.png)
+<img src="https://s2.loli.net/2022/06/06/XilHBFIkQxRvf6U.png" alt="SSH" style="zoom:30%;" />
 
 ### 1、下载OpenSSH
 
@@ -38,4 +38,6 @@ sc config sshd start= auto
 net start sshd
 ```
 
-### 5、通过工具连接OpenSSH
+### 5、添加系统变量
+
+- 将OpenSSh的路径添加系统环境变量path下

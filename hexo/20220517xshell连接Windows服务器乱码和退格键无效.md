@@ -9,16 +9,16 @@ tags:
 
 通过xshell连接Windows系统部署OpenSSH服务。
 
-![xshell](https://s2.loli.net/2022/06/06/WF6A7pkqbnIdUlC.jpg)
+<img src="https://s2.loli.net/2022/06/06/WF6A7pkqbnIdUlC.jpg" alt="xshell" style="zoom:80%;" />
 
 ### 1、xshell连接Windows服务器OpenSSH中文乱码
 
 解决方法：当前连接会话属性界面，选择终端，编码设置为Unicode(UTF-8)
 
-![xshell001](https://s2.loli.net/2022/06/06/oZDBecCPmsW75Ej.png)
+<img src="https://s2.loli.net/2022/06/06/oZDBecCPmsW75Ej.png" alt="xshell001" style="zoom:80%;" />
 
 ### 2、xshell连接Windows服务器OpenSSH退格键无效
 
 解决方法：当前连接会话属性界面，选择终端-键盘，将BACKSPACE键序列修改为“ASCII 127(Ctrl+?)(I)”
 
-![xshell002](https://s2.loli.net/2022/06/06/VmdxUG25grRz9hc.png)
+<img src="https://s2.loli.net/2022/06/06/VmdxUG25grRz9hc.png" alt="xshell002" style="zoom:80%;" />

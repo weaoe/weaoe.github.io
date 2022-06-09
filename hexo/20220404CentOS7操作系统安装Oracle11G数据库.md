@@ -9,7 +9,7 @@ tags:
 
 CentOS7操作系统安装Oracle11G数据库步骤：
 
-![oracle](https://s2.loli.net/2022/06/06/vkiqp7ATZIMhdCK.png)
+<img src="https://s2.loli.net/2022/06/06/vkiqp7ATZIMhdCK.png" alt="oracle" style="zoom:50%;" />
 
 ### 1、创建用户和组
 

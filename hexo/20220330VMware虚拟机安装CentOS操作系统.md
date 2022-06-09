@@ -9,7 +9,7 @@ tags:
 
 VMware虚拟机安装CentOS操作系统，以下内容为安装注意事项和说明
 
-![centos](https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png)
+<img src="https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png" alt="centos" style="zoom:50%;" />
 
 ### 1、软件选择：
 
