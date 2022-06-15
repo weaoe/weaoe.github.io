@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Windows操作系统安装Oracle 12C | 河洛先生</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ORACLE数据库系统是美国ORACLE公司（甲骨文）提供的以分布式数据库为核心的一组软件产品，是目前最流行的客户&#x2F;服务器(CLIENT&#x2F;SERVER)或B&#x2F;S体系结构的数据库之一。 Oracle数据库12c引入了一个新的多承租方架构，使用该架构可轻松部署和管理数据库云。   Oracle下载打开Oracle官网，登录账号，选择相应版本下载即可。 网站地址：https">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows操作系统安装Oracle 12C">
+<meta property="og:url" content="https://weaoe.org/2020/07/27/20200727Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/index.html">
+<meta property="og:site_name" content="河洛先生">
+<meta property="og:description" content="ORACLE数据库系统是美国ORACLE公司（甲骨文）提供的以分布式数据库为核心的一组软件产品，是目前最流行的客户&#x2F;服务器(CLIENT&#x2F;SERVER)或B&#x2F;S体系结构的数据库之一。 Oracle数据库12c引入了一个新的多承租方架构，使用该架构可轻松部署和管理数据库云。   Oracle下载打开Oracle官网，登录账号，选择相应版本下载即可。 网站地址：https">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/GhMWUS6gNzHETOI.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/iTyEReJxsNlgSF2.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/nMwCsl4tLbXIVHD.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/NQtZJgU1ACep87x.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/bDJtjRdkhGFymLA.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/apf1Bg2O3Ln8vUN.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/XDEWra3KAivGwqm.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/BKPtHAfhZ4ImDnr.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/O1WGZkbcEe5syjT.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/FdIj6xLsGebrBzO.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/5ox1aPI3nvUFemE.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/HLazN4ToymUYKVB.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/Dh9rj8fvlsuzOGM.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/5ynicpdAYsmGqux.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/KsXALiDE1I4kH6y.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/RzqIjf6HZCDu5sa.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/p3eL6XgMC9uGy1A.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/zKg6c5U1BIA8X9f.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/nR43uHBoezQ5X6a.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/iejVGI5SHKCkmF8.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/ZflSHquIF5rz29s.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/bNROxHnKDre9g8M.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/15/hAoXVbvlzIx8T5N.png">
+<meta property="article:published_time" content="2020-07-27T14:09:37.000Z">
+<meta property="article:modified_time" content="2022-06-15T15:38:39.828Z">
+<meta property="article:author" content="河洛先生">
+<meta property="article:tag" content="Oracle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/06/15/GhMWUS6gNzHETOI.jpg">
+  
+  
+    <link rel="shortcut icon" href="/css/images/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">河洛先生</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个没有味道的人</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">时光机</a>
+        
+          <a class="main-nav-link" href="/categories/Linux/">Linux</a>
+        
+          <a class="main-nav-link" href="/categories/Windows/">Windows</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//bing.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weaoe.org"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20200727Windows操作系统安装Oracle12C" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/07/27/20200727Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" class="article-date">
+  <time class="dt-published" datetime="2020-07-27T14:09:37.000Z" itemprop="datePublished">2020-07-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Windows操作系统安装Oracle 12C
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>ORACLE数据库系统是美国ORACLE公司（甲骨文）提供的以分布式数据库为核心的一组软件产品，是目前最流行的客户&#x2F;服务器(CLIENT&#x2F;SERVER)或B&#x2F;S体系结构的数据库之一。</p>
+<p>Oracle数据库12c引入了一个新的多承租方架构，使用该架构可轻松部署和管理数据库云。</p>
+<img src="https://s2.loli.net/2022/06/15/GhMWUS6gNzHETOI.jpg" alt="img" style="zoom:90%;" />
+
+<h2 id="Oracle下载"><a href="#Oracle下载" class="headerlink" title="Oracle下载"></a>Oracle下载</h2><p>打开Oracle官网，登录账号，选择相应版本下载即可。</p>
+<p>网站地址：<a target="_blank" rel="noopener" href="https://www.oracle.com/">https://www.oracle.com</a></p>
+<p>下载成功解压后得到一下文件，双击setup.exe即可安装。</p>
+<p><img src="https://s2.loli.net/2022/06/15/iTyEReJxsNlgSF2.png" alt="img"></p>
+<h2 id="Oracle安装"><a href="#Oracle安装" class="headerlink" title="Oracle安装"></a>Oracle安装</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>双击setup.exe，启动安装程序，可以取消“我希望通过……”，然后点击“下一步”，弹出“尚未提供电子邮件地址”的提示窗口，直接点击“是”即可。</p>
+<p><img src="https://s2.loli.net/2022/06/15/nMwCsl4tLbXIVHD.png" alt="img"></p>
+<p><img src="https://s2.loli.net/2022/06/15/NQtZJgU1ACep87x.png" alt="img"></p>
+<p><img src="https://s2.loli.net/2022/06/15/bDJtjRdkhGFymLA.png" alt="img"></p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>选择“创建和配置数据库”，在安装过程中会自动创建示例数据库，选择“仅安装数据库软件”，可以自定义数据库安装选项和参数，我需要自定义数据库，选择“仅安装数据库软件”，点击“下一步”。</p>
+<p><img src="https://s2.loli.net/2022/06/15/apf1Bg2O3Ln8vUN.png" alt="img"></p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>根据实际情况选择安装类型，我在服务器安装，所以选择“服务器类”，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/XDEWra3KAivGwqm.png" alt="img"></p>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>根据实际情况选择数据库安装类型，点击“下一步”</p>
+<p><img src="https://s2.loli.net/2022/06/15/BKPtHAfhZ4ImDnr.png" alt="img"></p>
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>建议选择“高级安装”，可以分别设置用户口令、数据库字符集、产品语言和自动备份等高级功能，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/O1WGZkbcEe5syjT.png" alt="img"></p>
+<h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>根据需要选择数据库版本，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/FdIj6xLsGebrBzO.png" alt="img"></p>
+<h3 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h3><p>根据需求选择数据库服务运行的账户，点击“下一步”，弹出提示信息直接点击“是”即可；</p>
+<p><img src="https://s2.loli.net/2022/06/15/5ox1aPI3nvUFemE.png" alt="img"></p>
+<p><img src="https://s2.loli.net/2022/06/15/HLazN4ToymUYKVB.png" alt="img"></p>
+<h3 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h3><p>Oracle会自动选择安装在空间最大的磁盘目录，也可以自定义修改安装路径；</p>
+<p><img src="https://s2.loli.net/2022/06/15/Dh9rj8fvlsuzOGM.png" alt="img"></p>
+<h3 id="第九步"><a href="#第九步" class="headerlink" title="第九步"></a>第九步</h3><p>根据需求选择数据库类型，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/5ynicpdAYsmGqux.png" alt="img"></p>
+<h3 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h3><p>设置数据库的“全局数据库名”和“SID”，并根据需求选择是否“创建为容器数据库”，点击“下一步”；</p>
+<p>容器数据库主要应用于虚拟化技术；</p>
+<p><img src="https://s2.loli.net/2022/06/15/KsXALiDE1I4kH6y.png" alt="img"></p>
+<h3 id="第十一步"><a href="#第十一步" class="headerlink" title="第十一步"></a>第十一步</h3><p>根据服务器性能和用途设置内存和字符集，点击“下一步”；</p>
+<p>服务器完全用作数据库的话可以设置到80%；</p>
+<p><img src="https://s2.loli.net/2022/06/15/RzqIjf6HZCDu5sa.png" alt="img"></p>
+<h3 id="第十二步"><a href="#第十二步" class="headerlink" title="第十二步"></a>第十二步</h3><p>根据实际需求设置存储方式，一般为“文件系统”，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/p3eL6XgMC9uGy1A.png" alt="img"></p>
+<h3 id="第十三步"><a href="#第十三步" class="headerlink" title="第十三步"></a>第十三步</h3><p>按照需求选择是否“注册到……”，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/zKg6c5U1BIA8X9f.png" alt="img"></p>
+<h3 id="第十四步"><a href="#第十四步" class="headerlink" title="第十四步"></a>第十四步</h3><p>建议启用“文件恢复”，在数据库出现问题时可以恢复数据，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/nR43uHBoezQ5X6a.png" alt="img"></p>
+<h3 id="第十五步"><a href="#第十五步" class="headerlink" title="第十五步"></a>第十五步</h3><p>根据需要设置管理用户的口令，建议分开设置不同的密码，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/iejVGI5SHKCkmF8.png" alt="img"></p>
+<h3 id="第十六步"><a href="#第十六步" class="headerlink" title="第十六步"></a>第十六步</h3><p>自动检查是否满足产品的最低安装和配置要求，点击“下一步”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/ZflSHquIF5rz29s.png" alt="img"></p>
+<h3 id="第十七步"><a href="#第十七步" class="headerlink" title="第十七步"></a>第十七步</h3><p>显示之前选择和设置的各项功能和参数，点击“安装”；</p>
+<p><img src="https://s2.loli.net/2022/06/15/bNROxHnKDre9g8M.png" alt="img"></p>
+<h3 id="第十八步"><a href="#第十八步" class="headerlink" title="第十八步"></a>第十八步</h3><p>数据根据配置项开始安装，安装过程根据服务器配置时间长短不定，点击“下一步”；</p>
+<img src="https://s2.loli.net/2022/06/15/hAoXVbvlzIx8T5N.png" alt="img"  />
+
+<h3 id="第十九步"><a href="#第十九步" class="headerlink" title="第十九步"></a>第十九步</h3><p>数据库安装完成，点击“关闭”即可。</p>
+<p>接下来可以设置监听、网络服务名等，使用自己常用的数据库管理工具进行数据库的创建、配置和使用。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2020/07/27/20200727Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="cl4frdrfn000178dteqvi539p" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          VMware虚拟机安装CentOS操作系统
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hexo部署更新说明</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CentOS/" style="font-size: 20px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 12.5px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 12.5px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 12.5px;">Oracle</a> <a href="/tags/Software/" style="font-size: 12.5px;">Software</a> <a href="/tags/System/" style="font-size: 17.5px;">System</a> <a href="/tags/UOS/" style="font-size: 12.5px;">UOS</a> <a href="/tags/VMware/" style="font-size: 12.5px;">VMware</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">CentOS安装cockpit管理工具</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/">xshell连接Windows乱码和退格键无效</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1%E5%99%A8/">Windows操作系统部署OpenSSH服务器</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/">常用软件收藏和下载</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux操作系统常用命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 河洛先生<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">时光机</a>
+  
+    <a href="/categories/Linux/" class="mobile-nav-link">Linux</a>
+  
+    <a href="/categories/Windows/" class="mobile-nav-link">Windows</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
