@@ -46,6 +46,8 @@ Oracle数据库12c引入了一个新的多承租方架构，使用该架构可�
 
 <img src="https://s2.loli.net/2022/06/15/XDEWra3KAivGwqm.png" alt="img" style="zoom:80%;" />
 
+<!--more-->
+
 ### 第四步
 
 根据实际情况选择数据库安装类型，点击“下一步”
