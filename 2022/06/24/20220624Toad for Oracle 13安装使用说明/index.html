@@ -4,26 +4,39 @@
   <meta charset="utf-8">
   
   
-  <title>解决连接Oracle12C的ORA-28040错误 | 河洛先生</title>
+  <title>Toad for Oracle 13安装使用说明 | 河洛先生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="问题描述：使用Oracle 11G客户端登录Oracle 12C数据库，出现“ORA-28040：没有匹配的验证协议”提示。 无论使用Toad for Oracle还是PL&#x2F;SQL Developer等数据库工具，以下方法均可以解决问题。   解决方法：1、Oracle 12C服务端修改“..&#x2F;network&#x2F;admin”目录下的sqlnet.ora文件，增加一下内容">
+  <meta name="description" content="Toad for Oracle是专业用于处理SQL开发和任务的Oracle开发人员工具和数据库管理软件。 第一步运行Toad for Oracle 13的安装程序，点击“next”；  第二步接受许可协议，点击“next”；  第三步输入license和Site Message，点击“next”；  第四步选择需要安装的应用程序，点击“next”；  第五步选择安装路径，点击“next”；  第六">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决连接Oracle12C的ORA-28040错误">
-<meta property="og:url" content="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/index.html">
+<meta property="og:title" content="Toad for Oracle 13安装使用说明">
+<meta property="og:url" content="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/index.html">
 <meta property="og:site_name" content="河洛先生">
-<meta property="og:description" content="问题描述：使用Oracle 11G客户端登录Oracle 12C数据库，出现“ORA-28040：没有匹配的验证协议”提示。 无论使用Toad for Oracle还是PL&#x2F;SQL Developer等数据库工具，以下方法均可以解决问题。   解决方法：1、Oracle 12C服务端修改“..&#x2F;network&#x2F;admin”目录下的sqlnet.ora文件，增加一下内容">
+<meta property="og:description" content="Toad for Oracle是专业用于处理SQL开发和任务的Oracle开发人员工具和数据库管理软件。 第一步运行Toad for Oracle 13的安装程序，点击“next”；  第二步接受许可协议，点击“next”；  第三步输入license和Site Message，点击“next”；  第四步选择需要安装的应用程序，点击“next”；  第五步选择安装路径，点击“next”；  第六">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2022/06/24/68pVkWZSHcPBzxv.jpg">
-<meta property="og:image" content="https://s2.loli.net/2022/06/24/EOUqCtIJwVKpzgh.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/mYQJWewulq6AF25.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/NRAGdYM4O9tzxy6.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/SE7MFpmjbr4Bofv.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/jk8SgqR4mfJePGI.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/XbpKaSorc6nZzfP.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/Y6zCsgPFd2mKvqU.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/do8CuDPmytfXxZ6.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/WcfFz91SToqUl3i.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/giNVlC7LyR958Zf.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/JydSFuo579eW4hv.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/SiONQd2sxDWmqZk.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/dv5xk1CDcJYph78.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/orZJFdURCuy2nM4.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/m7R5kbZjfh6wJXd.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/sGZqhNMogHQfSP3.png">
 <meta property="og:image" content="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif">
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg">
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg">
-<meta property="article:published_time" content="2022-06-24T14:15:12.000Z">
-<meta property="article:modified_time" content="2022-06-24T07:22:18.372Z">
+<meta property="article:published_time" content="2022-06-24T14:15:57.000Z">
+<meta property="article:modified_time" content="2022-06-24T08:06:45.846Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="Oracle">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2022/06/24/68pVkWZSHcPBzxv.jpg">
+<meta name="twitter:image" content="https://s2.loli.net/2022/06/24/mYQJWewulq6AF25.png">
   
   
     <link rel="shortcut icon" href="/css/images/favicon.png">
@@ -81,10 +94,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-20220624解决连接Oracle12C的ORA-28040错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-20220624Toad for Oracle 13安装使用说明" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" class="article-date">
-  <time class="dt-published" datetime="2022-06-24T14:15:12.000Z" itemprop="datePublished">2022-06-24</time>
+    <a href="/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="article-date">
+  <time class="dt-published" datetime="2022-06-24T14:15:57.000Z" itemprop="datePublished">2022-06-24</time>
 </a>
     
   <div class="article-category">
@@ -99,7 +112,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      解决连接Oracle12C的ORA-28040错误
+      Toad for Oracle 13安装使用说明
     </h1>
   
 
@@ -107,18 +120,43 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>使用Oracle 11G客户端登录Oracle 12C数据库，出现“ORA-28040：没有匹配的验证协议”提示。</p>
-<p>无论使用Toad for Oracle还是PL&#x2F;SQL Developer等数据库工具，以下方法均可以解决问题。</p>
-<img src="https://s2.loli.net/2022/06/24/68pVkWZSHcPBzxv.jpg" alt="image002" style="zoom:80%;" />
-
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>1、Oracle 12C服务端修改“..&#x2F;network&#x2F;admin”目录下的sqlnet.ora文件，增加一下内容：</p>
-<p>SQLNET.ALLOWED_LOGON_VERSION_SERVER&#x3D;11;</p>
-<p>SQLNET.ALLOWED_LOGON_VERSION_CLIENT&#x3D;11;</p>
-<p>2、使你用管理员登录数据库，修改用户密码</p>
-<p>sqlplus &#x2F; as sysdba</p>
-<p>alter user username identified by password;</p>
-<img src="https://s2.loli.net/2022/06/24/EOUqCtIJwVKpzgh.png" alt="image002" style="zoom:80%;" />
-
+        <p>Toad for Oracle是专业用于处理SQL开发和任务的Oracle开发人员工具和数据库管理软件。</p>
+<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>运行Toad for Oracle 13的安装程序，点击“next”；</p>
+<p><img src="https://s2.loli.net/2022/06/24/mYQJWewulq6AF25.png" alt="image001"></p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>接受许可协议，点击“next”；</p>
+<p><img src="https://s2.loli.net/2022/06/24/NRAGdYM4O9tzxy6.png" alt="image003"></p>
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>输入license和Site Message，点击“next”；</p>
+<p><img src="https://s2.loli.net/2022/06/24/SE7MFpmjbr4Bofv.png" alt="image005"></p>
+<h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>选择需要安装的应用程序，点击“next”；</p>
+<p><img src="https://s2.loli.net/2022/06/24/jk8SgqR4mfJePGI.png" alt="image007"></p>
+<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>选择安装路径，点击“next”；</p>
+<p><img src="https://s2.loli.net/2022/06/24/XbpKaSorc6nZzfP.png" alt="image009"></p>
+<h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><p>点击“install”，开始安装程序；</p>
+<p><img src="https://s2.loli.net/2022/06/24/Y6zCsgPFd2mKvqU.png" alt="image011"></p>
+<p><img src="https://s2.loli.net/2022/06/24/do8CuDPmytfXxZ6.png" alt="image013"></p>
+<h2 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h2><p>安装完成，点击“finish”关闭窗口；</p>
+<p><img src="https://s2.loli.net/2022/06/24/WcfFz91SToqUl3i.png" alt="image015"></p>
+<h2 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h2><p>运行Toad for Oracle 13快捷方式，启动界面如下；</p>
+<p><img src="https://s2.loli.net/2022/06/24/giNVlC7LyR958Zf.png" alt="image017"></p>
+<h2 id="第九步"><a href="#第九步" class="headerlink" title="第九步"></a>第九步</h2><p>首次运行Toad for Oracle 13，电脑需要安装有Oracle客户端，录入User、Password，选择连接方式，点击“Connect”进行登录；</p>
+<p>Save password：选中后可以保存用户名和密码；</p>
+<p>Color：设置当前连接的颜色，用于区分连接的数据；</p>
+<p>Connect as：设置连接用户的权限；</p>
+<p>Oracle连接方式：</p>
+<p>1、网路服务名方式</p>
+<p><img src="https://s2.loli.net/2022/06/24/JydSFuo579eW4hv.png" alt="image019"></p>
+<p>2、Host、Port方式连接；</p>
+<p><img src="https://s2.loli.net/2022/06/24/SiONQd2sxDWmqZk.png" alt="image021"></p>
+<h2 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h2><p>登录成功，默认显示Editor，用于编辑、执行SQL语句；</p>
+<p>在工具栏区域点击右键，可以设置Windows Bar、workspace等快捷操作菜单，也可以自定义（Customize）和锁定（Lock toolbars）工具栏；</p>
+<p><img src="https://s2.loli.net/2022/06/24/dv5xk1CDcJYph78.png" alt="image023"></p>
+<h2 id="第十一步"><a href="#第十一步" class="headerlink" title="第十一步"></a>第十一步</h2><p>点击工具栏的（Schema Browser）图标或者菜单栏的“Database-Schema Browser”，默认显示登录用户的数据表（table）；</p>
+<p><img src="https://s2.loli.net/2022/06/24/orZJFdURCuy2nM4.png" alt="image025"></p>
+<h2 id="第十二步"><a href="#第十二步" class="headerlink" title="第十二步"></a>第十二步</h2><p>选中当前登录用户的数据表，在右侧可以查看字典（columns）、索引（Indexes）、数据（Data）等内容，也可通过条件过滤数据；</p>
+<p><img src="https://s2.loli.net/2022/06/24/m7R5kbZjfh6wJXd.png" alt="image027"></p>
+<h2 id="第十三步"><a href="#第十三步" class="headerlink" title="第十三步"></a>第十三步</h2><p>针对已过滤的数据，点击右键可以进行导出（Export Editor）、统计（Record Count）等；</p>
+<p> <img src="https://s2.loli.net/2022/06/24/sGZqhNMogHQfSP3.png" alt="image029"></p>
+<p>以上是Toad for Oracle 13的安装和登录，更多的强大功能需要在使用中体验</p>
 <img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
 
 <hr>
@@ -127,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="cl4s6713r0037fwdt1exx66he" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" data-id="cl4s6713m0034fwdt78cy08ng" data-title="Toad for Oracle 13安装使用说明" class="article-share-link">分享</a>
       
       
       
@@ -139,19 +177,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          常用Oracle数据库命令
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">Windows操作系统安装Oracle 12C</div>
+      <div class="article-nav-title">常用Oracle数据库命令</div>
     </a>
   
 </nav>
