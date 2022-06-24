@@ -14,8 +14,10 @@
 <meta property="og:description" content="VMware虚拟机安装统信UOS操作系统后的一些设置；   1、启用ssh连接1234567sudo apt install openssh-server  &#x2F;&#x2F;默认已安装systemctl enable ssh  &#x2F;&#x2F;设置开机启动systemctl status sshsystemctl start sshsystemctl stop sshsystemctl restart sshsystem">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/06/06/ahxdVYX52FOMpsB.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg">
 <meta property="article:published_time" content="2022-04-05T14:15:28.000Z">
-<meta property="article:modified_time" content="2022-06-08T09:50:17.586Z">
+<meta property="article:modified_time" content="2022-06-24T02:22:01.853Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="VMware">
 <meta property="article:tag" content="UOS">
@@ -112,10 +114,16 @@
 <h3 id="2、启用root的ssh连接，默认root不能ssh连接"><a href="#2、启用root的ssh连接，默认root不能ssh连接" class="headerlink" title="2、启用root的ssh连接，默认root不能ssh连接"></a>2、启用root的ssh连接，默认root不能ssh连接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">编辑sshd配置文件,将#PermitRootLogin prohibit-password的#删除，将prohibit-password更改为yes</span><br><span class="line">vi /etc/ssh/sshd_config</span><br><span class="line">重启ssh服务</span><br><span class="line">systemctl restart ssh</span><br></pre></td></tr></table></figure>
 
 
+
+
+
+<hr>
+<h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl4qp70o9000a7wdtcv837u5i" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl4ru2pdh000bxgdta2j2f4lb" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
       
       
       
