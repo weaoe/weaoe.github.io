@@ -41,7 +41,7 @@ df -lh
 
 <img src="https://s2.loli.net/2022/06/07/lZYw8sgxpPcV7WO.png" style="zoom:80%;" />
 
-![](https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif)
+<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
 
 ---
 
