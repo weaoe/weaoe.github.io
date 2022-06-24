@@ -43,3 +43,10 @@ chmod 755 ./EIVApp
 sudo rpm -ivh libicu-50.2-4.el7_7.x86_64.rpm
 ```
 
+
+
+---
+
+## <center>欢迎关注公众号收藏小程序</center>
+
+![河洛先生](https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg)![河洛先生](https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg)

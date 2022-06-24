@@ -7,7 +7,7 @@ tags:
      - VMware
 ---
 
-VMware虚拟机安装CentOS操作系统，以下内容为安装注意事项和说明
+VMware虚拟机安装CentOS操作系统，以下内容为安装注意事项和说明。
 
 <img src="https://s2.loli.net/2022/06/06/AqmpcIWK7VnsbF2.png" alt="centos" style="zoom:50%;" />
 
@@ -122,5 +122,8 @@ unrar x test.rar DestPath　　#解压（会在当前解压目录内产生一个
 
 方法二：使用命令 sudo su 切换到root用户，然后在执行命令。
 
+---
 
+## <center>欢迎关注公众号收藏小程序</center>
 
+![河洛先生](https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg)![河洛先生](https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg)

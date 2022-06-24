@@ -22,3 +22,13 @@ tags:
 解决方法：当前连接会话属性界面，选择终端-键盘，将BACKSPACE键序列修改为“ASCII 127(Ctrl+?)(I)”
 
 <img src="https://s2.loli.net/2022/06/06/VmdxUG25grRz9hc.png" alt="xshell002" style="zoom:80%;" />
+
+
+
+
+
+---
+
+## <center>欢迎关注公众号收藏小程序</center>
+
+![河洛先生](https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg)![河洛先生](https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg)

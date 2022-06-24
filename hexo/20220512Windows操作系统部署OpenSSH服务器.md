@@ -41,3 +41,13 @@ net start sshd
 ### 5、添加系统变量
 
 - 将OpenSSh的路径添加系统环境变量path下
+
+
+
+
+
+---
+
+## <center>欢迎关注公众号收藏小程序</center>
+
+![河洛先生](https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg)![河洛先生](https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg)
