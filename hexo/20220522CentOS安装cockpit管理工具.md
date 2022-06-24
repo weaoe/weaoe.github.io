@@ -28,7 +28,7 @@ sudo yum install cockpit-dashboard
 http://192.168.0.1:9090
 ```
 
-
+![](https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif)
 
 ---
 

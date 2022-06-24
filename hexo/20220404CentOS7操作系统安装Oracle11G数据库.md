@@ -96,7 +96,7 @@ systemctl disable firewalld.service　　#禁止使用防火墙（重启也是�
 
 。。。
 
-
+![](https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif)
 
 ---
 

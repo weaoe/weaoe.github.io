@@ -14,10 +14,11 @@
 <meta property="og:description" content="远程管理Windows系统服务，在无需远程服务器的情况下启动、停止、查询服务，可以用于更新服务。   1、查询服务运行状态1sc \\192.168.1.202 query kgeivapp  stopped：已停止 running：已运行 2、查询服务配置状况1sc \\192.168.1.202 qc kgeivapp  disabled：禁用 demand_start：手动 auto_sta">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/06/06/lYnZedwGQRcpV45.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif">
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg">
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg">
 <meta property="article:published_time" content="2022-04-06T14:15:12.000Z">
-<meta property="article:modified_time" content="2022-06-24T02:23:26.018Z">
+<meta property="article:modified_time" content="2022-06-24T03:24:48.624Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="System">
 <meta property="article:tag" content="DotNet">
@@ -130,15 +131,14 @@
 <h3 id="7、使用telnet管理服务"><a href="#7、使用telnet管理服务" class="headerlink" title="7、使用telnet管理服务"></a>7、使用telnet管理服务</h3><p>如果服务器开启telnet，可通过telnet命令管理服务，无需在命令中添加远程计算机IP，直接执行命令即可，如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sc query kgeivapp</span><br><span class="line">sc qc kgeivapp</span><br><span class="line">sc config kgeivapp start= auto</span><br><span class="line">sc start kgeivapp</span><br><span class="line">sc stop kgeivapp</span><br><span class="line">sc restart kgeivapp</span><br></pre></td></tr></table></figure>
 
-
-
+<p><img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif"></p>
 <hr>
 <h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/06/20220406Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/" data-id="cl4ru5gq2000oqcdt54zw1t8w" data-title="Windows操作系统远程管理服务" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/06/20220406Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/" data-id="cl4rwg4k3000or4dt38znfxcu" data-title="Windows操作系统远程管理服务" class="article-share-link">分享</a>
       
       
       
