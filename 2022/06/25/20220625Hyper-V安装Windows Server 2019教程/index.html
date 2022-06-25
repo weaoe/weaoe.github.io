@@ -6,12 +6,12 @@
   
   <title>Hyper-V安装Windows server 2019教程 | 河洛先生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Hyper-V是微软的虚拟化产品，是采用类似Vmware ESXi的基于hypervisor的技术，能够实现桌面虚拟化。   软件硬件要求： 1、Intel或者AMD64位处理器； 2、Windows Server 2008 R2或Windows 7及以上操作系统； 3、硬件虚拟化，[Intel vt](https:&#x2F;&#x2F;baike.baidu.com&#x2F;item&#x2F;Intel vt&#x2F;2091">
+  <meta name="description" content="Hyper-V是微软的虚拟化产品，是采用类似Vmware ESXi的基于hypervisor的技术，能够实现桌面虚拟化。   软件硬件要求： 1、Intel或者AMD64位处理器； 2、Windows Server 2008 R2或Windows 7及以上操作系统； 3、硬件虚拟化，Intel vt或AMD-v； 4、CPU必须具备数据执行保护（ DEP ）功能并且启动； 5、内存最低限度为2GB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hyper-V安装Windows server 2019教程">
 <meta property="og:url" content="https://weaoe.org/2022/06/25/20220625Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="河洛先生">
-<meta property="og:description" content="Hyper-V是微软的虚拟化产品，是采用类似Vmware ESXi的基于hypervisor的技术，能够实现桌面虚拟化。   软件硬件要求： 1、Intel或者AMD64位处理器； 2、Windows Server 2008 R2或Windows 7及以上操作系统； 3、硬件虚拟化，[Intel vt](https:&#x2F;&#x2F;baike.baidu.com&#x2F;item&#x2F;Intel vt&#x2F;2091">
+<meta property="og:description" content="Hyper-V是微软的虚拟化产品，是采用类似Vmware ESXi的基于hypervisor的技术，能够实现桌面虚拟化。   软件硬件要求： 1、Intel或者AMD64位处理器； 2、Windows Server 2008 R2或Windows 7及以上操作系统； 3、硬件虚拟化，Intel vt或AMD-v； 4、CPU必须具备数据执行保护（ DEP ）功能并且启动； 5、内存最低限度为2GB">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/06/25/S4hP7za9ceuLktR.jpg">
 <meta property="og:image" content="https://s2.loli.net/2022/06/25/Wu6UdmFerPRIDC9.png">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg">
 <meta property="og:image" content="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg">
 <meta property="article:published_time" content="2022-06-25T14:14:13.000Z">
-<meta property="article:modified_time" content="2022-06-25T12:22:01.560Z">
+<meta property="article:modified_time" content="2022-06-25T12:38:37.924Z">
 <meta property="article:author" content="河洛先生">
 <meta property="article:tag" content="System">
 <meta name="twitter:card" content="summary">
@@ -132,10 +132,10 @@
 <img src="https://s2.loli.net/2022/06/25/S4hP7za9ceuLktR.jpg" alt="image022" style="zoom:80%;" />
 
 <p><strong>软件硬件要求：</strong></p>
-<p>1、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Intel/125450">Intel</a>或者<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/AMD/5905">AMD</a>64位处理器；</p>
+<p>1、Intel或者AMD64位处理器；</p>
 <p>2、Windows Server 2008 R2或Windows 7及以上操作系统；</p>
-<p>3、硬件虚拟化，[Intel vt](<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Intel">https://baike.baidu.com/item/Intel</a> vt&#x2F;2091588)或AMD-v；</p>
-<p>4、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CPU/120556">CPU</a>必须具备<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E6%89%A7%E8%A1%8C%E4%BF%9D%E6%8A%A4">数据执行保护</a>（ DEP ）功能并且启动；</p>
+<p>3、硬件虚拟化，Intel vt或AMD-v；</p>
+<p>4、CPU必须具备数据执行保护（ DEP ）功能并且启动；</p>
 <p>5、内存最低限度为2GB。</p>
 <p>Windows server 2019 安装Hyper-V具体图文说明如下</p>
 <h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>运行Hyper-V管理器，在服务器名称点击右键，选择“新建-虚拟机”。</p>
@@ -225,7 +225,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="cl4tv6yie001x8cdt023w1il2" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="cl4tw2vus001xjkdt84sfbim7" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
       
       
       
@@ -266,7 +266,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">12</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">14</span></li></ul>
     </div>
   </div>
 
@@ -276,7 +276,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -286,7 +286,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CentOS/" style="font-size: 20px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 16.67px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 13.33px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 13.33px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 13.33px;">UOS</a> <a href="/tags/VMware/" style="font-size: 13.33px;">VMware</a>
+      <a href="/tags/CentOS/" style="font-size: 17.5px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 12.5px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 12.5px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 15px;">Oracle</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 12.5px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 12.5px;">UOS</a> <a href="/tags/VMware/" style="font-size: 12.5px;">VMware</a>
     </div>
   </div>
 
@@ -295,7 +295,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -308,6 +308,14 @@
       <ul>
         
           <li>
+            <a href="/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/">Postman使用MD5加密签名的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/25/20220625Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/">Windows服务占用磁盘和CPU</a>
+          </li>
+        
+          <li>
             <a href="/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/">.NET Core项目部署到IIS服务的方法</a>
           </li>
         
@@ -317,14 +325,6 @@
         
           <li>
             <a href="/2022/06/25/20220625Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/">Hyper-V安装Windows server 2019教程</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/25/20220625Windows%20server%202019%E5%AE%89%E8%A3%85Hyper-V%E6%95%99%E7%A8%8B/">Windows server 2019安装Hyper-V教程</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">Toad for Oracle 13安装使用说明</a>
           </li>
         
       </ul>

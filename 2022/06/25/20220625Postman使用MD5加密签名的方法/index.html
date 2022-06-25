@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Postman使用MD5加密签名的方法 | 河洛先生</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="软件介绍Postman是用户在开发、调试网络程序或者是网页时候来跟踪网络请求的，可以发送几乎所有类型的HTTP请求！Postman在发送网络HTTP请求方面可以说是网络调试类产品中的代表产品。   操作系统Postman适用于不同的操作系统， Windows X32、Windows X64、Linux和Mac系统。 常用功能1、Postman请求方式包含get、post、put等常用方式； 2、请">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Postman使用MD5加密签名的方法">
+<meta property="og:url" content="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="河洛先生">
+<meta property="og:description" content="软件介绍Postman是用户在开发、调试网络程序或者是网页时候来跟踪网络请求的，可以发送几乎所有类型的HTTP请求！Postman在发送网络HTTP请求方面可以说是网络调试类产品中的代表产品。   操作系统Postman适用于不同的操作系统， Windows X32、Windows X64、Linux和Mac系统。 常用功能1、Postman请求方式包含get、post、put等常用方式； 2、请">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/06/25/wWTZlNDQ5ykGheV.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/25/nB9QCyi6WmgeRxk.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/25/9zUwdeso5XP4axl.png">
+<meta property="og:image" content="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif">
+<meta property="og:image" content="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg">
+<meta property="article:published_time" content="2022-06-25T14:20:48.000Z">
+<meta property="article:modified_time" content="2022-06-25T12:58:58.589Z">
+<meta property="article:author" content="河洛先生">
+<meta property="article:tag" content="Postman">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/06/25/wWTZlNDQ5ykGheV.jpg">
+  
+  
+    <link rel="shortcut icon" href="/css/images/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">河洛先生</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个没有味道的人</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">时光机</a>
+        
+          <a class="main-nav-link" href="/categories/Linux/">Linux</a>
+        
+          <a class="main-nav-link" href="/categories/Windows/">Windows</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//bing.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weaoe.org"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-20220625Postman使用MD5加密签名的方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2022-06-25T14:20:48.000Z" itemprop="datePublished">2022-06-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Postman使用MD5加密签名的方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h2><p>Postman是用户在开发、调试网络程序或者是网页时候来跟踪网络请求的，可以发送几乎所有类型的HTTP请求！Postman在发送网络HTTP请求方面可以说是网络调试类产品中的代表产品。</p>
+<img src="https://s2.loli.net/2022/06/25/wWTZlNDQ5ykGheV.jpg" alt="image001" style="zoom:80%;" />
+
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><p>Postman适用于不同的操作系统， Windows X32、Windows X64、Linux和Mac系统。</p>
+<h2 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h2><p>1、Postman请求方式包含get、post、put等常用方式；</p>
+<p>2、请求格式包含form-data、raw、binary等常用格式；</p>
+<p>3、collection是类似文件夹，可以把相关项目的请求放在一起方便管理和测试；</p>
+<p>4、Pre-request Script，主要用于编写数据发送前的自定义脚本，实现数据的自动化签名或设置，此功能为本篇文章的主要说明内容；</p>
+<p>5、其它常用功能如设置环境变量、暗黑模式、导出文档等就不一一介绍了；</p>
+<h2 id="MD5加密签名"><a href="#MD5加密签名" class="headerlink" title="MD5加密签名"></a>MD5加密签名</h2><p>Pre-request Script选项卡，主要用于编写数据发送前的自定义脚本，通过一下示例来说明一下。</p>
+<h3 id="签名示例一："><a href="#签名示例一：" class="headerlink" title="签名示例一："></a>签名示例一：</h3><p>Body选项卡：</p>
+<img src="https://s2.loli.net/2022/06/25/nB9QCyi6WmgeRxk.png" alt="image002" style="zoom:80%;" />
+
+<p>Pre-request Script选项卡：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var params = request.data; </span><br><span class="line"></span><br><span class="line">var signKey = &quot;415233197335409695&quot;; </span><br><span class="line"></span><br><span class="line">var md5String = params.cmd +</span><br><span class="line"></span><br><span class="line">    params.account +</span><br><span class="line"></span><br><span class="line">    params.nonce +</span><br><span class="line"></span><br><span class="line">    params.client +</span><br><span class="line"></span><br><span class="line">    params.timestamp +</span><br><span class="line"></span><br><span class="line">    params.data +</span><br><span class="line"></span><br><span class="line">    signKey; </span><br><span class="line"></span><br><span class="line">console.log(&quot;md5String----&gt;&quot; + md5String); </span><br><span class="line"></span><br><span class="line">var md5 = CryptoJS.MD5(md5String).toString(); </span><br><span class="line"></span><br><span class="line">console.log(&quot;md5 digest----&gt;&quot; + md5); </span><br><span class="line"></span><br><span class="line">pm.environment.set(&quot;apising&quot;, md5);</span><br></pre></td></tr></table></figure>
+
+<p> 1、声明可以从postman的body选项卡中获取参数，无需在单独声明，当body选项卡中的参数改变时脚本中数据会自动更新；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var params = request.data;</span><br></pre></td></tr></table></figure>
+
+<p>2、声明签名密钥，由于数据中是不包含密钥信息的，所以需要单独声明；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var signKey = &quot;415233197335409695&quot;;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>3、var md5String声明了需要签名的信息包含哪些参数以及信息方式和顺序；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var md5String = params.cmd +</span><br><span class="line"></span><br><span class="line">  params.account +</span><br><span class="line"></span><br><span class="line">  params.nonce +</span><br><span class="line"></span><br><span class="line">  params.client +</span><br><span class="line"></span><br><span class="line">  params.timestamp +</span><br><span class="line"></span><br><span class="line">  params.data +</span><br><span class="line"></span><br><span class="line">  signKey;</span><br></pre></td></tr></table></figure>
+
+<p>4、定义了输出的信息以及完整的日志，方便分析数据和调试；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;md5String----&gt;&quot; + md5String);</span><br></pre></td></tr></table></figure>
+
+<p>5、声明了md5信息并转换为字符串，方便和程序或服务端的签名信息核对，验证签名是否一致；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var md5 = CryptoJS.MD5(md5String).toString();</span><br></pre></td></tr></table></figure>
+
+<p>6、输出md5签名信息并记录日志；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;md5 digest----&gt;&quot; + md5);</span><br></pre></td></tr></table></figure>
+
+<p>7、通过postman内置的函数将以上签名结果设置为变量，名称为apising，在body的选项卡中将value值设置为｛｛apising｝｝即可，在调用调试接口前会自动执行脚本命令并获取到变量值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm.environment.set(&quot;apising&quot;, md5);</span><br></pre></td></tr></table></figure>
+
+<p><strong>签名示例二：</strong></p>
+<p>输入license和Site Message，点击“next”；</p>
+<p>Body选项卡：</p>
+<p>Body选项卡内可以是任意格式的参数；</p>
+<p>Pre-request Script选项卡：</p>
+<img src="https://s2.loli.net/2022/06/25/9zUwdeso5XP4axl.png" alt="image003" style="zoom:80%;" />
+
+<p>1、声明参数、签名密钥等，可以把需要都单独声明一下；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var number = var &quot;415233197335409695&quot;;</span><br><span class="line"></span><br><span class="line">signKey = &quot;415233197335409695&quot;;</span><br><span class="line"></span><br><span class="line">……</span><br></pre></td></tr></table></figure>
+
+<p>2、var md5String声明了需要签名的信息包含哪些参数以及信息方式和顺序；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var md5String = params.number+</span><br><span class="line"></span><br><span class="line">signKey;</span><br></pre></td></tr></table></figure>
+
+<p>4、定义了输出的信息以及完整的日志，方便分析数据和调试；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;md5String----&gt;&quot; + md5String);</span><br></pre></td></tr></table></figure>
+
+<p>5、声明了md5信息并转换为字符串，方便和程序或服务端的签名信息核对，验证签名是否一致；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var md5 = CryptoJS.MD5(md5String).toString();</span><br></pre></td></tr></table></figure>
+
+<p>6、输出md5签名信息并记录日志；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;md5 digest----&gt;&quot; + md5);</span><br></pre></td></tr></table></figure>
+
+<p>7、通过postman内置的函数将以上签名结果设置为变量，名称为ytjdata，在body的选项卡中将value值设置为｛｛ytjdata｝｝即可，在调用调试接口前会自动执行脚本命令并获取到变量值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm.environment.set(&quot;ytjdata&quot;, md5);</span><br></pre></td></tr></table></figure>
+
+<p>以上两种情况包含了自动获取签名参数和自定义需要签名的参数，也可以通过脚本命令实现一些其他的特殊参数、变量等。</p>
+<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
+<hr>
+<h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl4tw2vuu0021jkdt9orl4js8" data-title="Postman使用MD5加密签名的方法" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Postman/" rel="tag">Postman</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/06/25/20220625Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Windows服务占用磁盘和CPU</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">14</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CentOS/" style="font-size: 17.5px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 12.5px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 12.5px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 15px;">Oracle</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 12.5px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 12.5px;">UOS</a> <a href="/tags/VMware/" style="font-size: 12.5px;">VMware</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/">Postman使用MD5加密签名的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/25/20220625Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/">Windows服务占用磁盘和CPU</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/">.NET Core项目部署到IIS服务的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/">Visual Studio发布.NET Core项目的方法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/25/20220625Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/">Hyper-V安装Windows server 2019教程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 河洛先生<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">时光机</a>
+  
+    <a href="/categories/Linux/" class="mobile-nav-link">Linux</a>
+  
+    <a href="/categories/Windows/" class="mobile-nav-link">Windows</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
