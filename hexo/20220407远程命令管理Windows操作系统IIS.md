@@ -1,5 +1,5 @@
 ---
-title: Windows操作系统远程管理IIS
+title: 远程命令管理Windows操作系统IIS
 date: 2022-04-07 22:13:34
 category: Windows
 tags: 
@@ -7,7 +7,7 @@ tags:
     - System
 ---
 
-远程管理Windows服务器的iis系统服务，在无需远程服务器的情况下启动、停止、查询IIS服务。
+远程命令管理Windows服务器的iis系统服务，在无需远程服务器的情况下启动、停止、查询IIS服务。
 
 <img src="https://s2.loli.net/2022/06/06/AwjHuEGDgPKLNb7.jpg" alt="IIS" style="zoom: 80%;" />
 
