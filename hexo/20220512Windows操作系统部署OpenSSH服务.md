@@ -1,5 +1,5 @@
 ---
-title: Windows操作系统部署OpenSSH服务器
+title: Windows操作系统部署OpenSSH服务
 date: 2022-05-12 22:17:45
 category: Windows
 tags: 
@@ -40,7 +40,7 @@ net start sshd
 
 ### 5、添加系统变量
 
-- 将OpenSSh的路径添加系统环境变量path下
+- 将OpenSSh的路径添加系统环境变量path下，完成以上步骤即可通过工具连接Windows服务器​。
 
 
 
