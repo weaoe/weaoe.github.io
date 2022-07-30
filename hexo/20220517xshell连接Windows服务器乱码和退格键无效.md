@@ -7,7 +7,7 @@ tags:
     - System
 ---
 
-通过xshell连接Windows系统部署OpenSSH服务。
+xshell连接Windows服务器后界面乱码和退格键无效的解决方法。
 
 <img src="https://s2.loli.net/2022/06/06/WF6A7pkqbnIdUlC.jpg" alt="xshell" style="zoom:80%;" />
 
