@@ -74,6 +74,68 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20220405CentOS操作系统安装达梦数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
+  <time class="dt-published" datetime="2022-04-05T14:18:00.000Z" itemprop="datePublished">2022-04-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/">CentOS操作系统安装DM达梦数据库</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>CentOS操作系统安装DM达梦数据库步骤和注意事项；</p>
+<img src="https://s2.loli.net/2022/07/01/TkFSKptV2ilWcNC.png" alt="DM" style="zoom:80%;" />
+
+<h3 id="1、创建用户和组"><a href="#1、创建用户和组" class="headerlink" title="1、创建用户和组"></a>1、创建用户和组</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 创建安装用户组 dinstall。</span><br><span class="line">groupadd -g 12349 dinstall</span><br><span class="line">2. 创建安装用户 dmdba。</span><br><span class="line">useradd -u 12345 -g dinstall -m -d /home/dmdba -s /bin/bash dmdba</span><br><span class="line">3. 初始化用户密码。nitdDH***6888</span><br><span class="line">passwd dmdba</span><br></pre></td></tr></table></figure>
+
+<p>dmdba用户密码：nitdDH***6888</p>
+<h3 id="2、检查操作系统限制"><a href="#2、检查操作系统限制" class="headerlink" title="2、检查操作系统限制"></a>2、检查操作系统限制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">一、使用 ulimit -a 进行查询，参数说明如下</span><br><span class="line">参数使用限制：</span><br><span class="line">1.data seg size</span><br><span class="line">data seg size (kbytes, -d)</span><br><span class="line">建议用户设置为 1048576(即 1GB)以上或 unlimited(无限制)，此参数过小将导</span><br><span class="line">致数据库启动失败。</span><br><span class="line">2. file size</span><br><span class="line">file size(blocks, -f)</span><br><span class="line">建议用户设置为 unlimited(无限制)，此参数过小将导致数据库安装或初始化失败。</span><br><span class="line">3. open files</span><br><span class="line">open files(-n)</span><br><span class="line">建议用户设置为 65536 以上或 unlimited(无限制)。</span><br><span class="line">4.virtual memory</span><br><span class="line">virtual memory (kbytes, -v)</span><br><span class="line">建议用户设置为 1048576(即 1GB)以上或 unlimited(无限制)，此参数过小将导</span><br><span class="line">致数据库启动失败。</span><br><span class="line">如 果 用 户 需 要 为 当 前 安 装 用 户 更 改 ulimit 的 资 源 限 制 ， 请 修 改 文 件</span><br><span class="line">/etc/security/limits.conf。</span><br><span class="line">二、建议修改open files(-n)改为65536或unlimited(无限制)</span><br><span class="line">1.编辑文件 /etc/security/limits.conf</span><br><span class="line">vi /etc/security/limits.conf</span><br><span class="line">2.在文档末尾（# End of file之前）添加如下内容，其中dmdba为下面将要创建的用户</span><br><span class="line">dmdba soft nofile 65536</span><br><span class="line">dmdba hard nofile 65536</span><br><span class="line">也可以设置为*，*代表所有用户</span><br><span class="line">* soft nofile 65536</span><br><span class="line">* hard nofile 65536</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、使用创建的用户登录安装"><a href="#3、使用创建的用户登录安装" class="headerlink" title="3、使用创建的用户登录安装"></a>3、使用创建的用户登录安装</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.赋予文件执行权限</span><br><span class="line">chmod 755 ./DMInstall.bin</span><br><span class="line">2.执行命令安装</span><br><span class="line">./DMInstall.bin</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、运行达梦数据库工具"><a href="#4、运行达梦数据库工具" class="headerlink" title="4、运行达梦数据库工具"></a>4、运行达梦数据库工具</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.进入达梦安装目录下的tool文件夹，如dmdbms/tool</span><br><span class="line">cd dmdbms/tool</span><br><span class="line">2.运行达梦数据库管理工具</span><br><span class="line">./manager</span><br><span class="line">3.运行达梦数据库迁移工具</span><br><span class="line">./dts</span><br></pre></td></tr></table></figure>
+
+
+
+<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
+<hr>
+<h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6dneq27000g7cdt90rf7zzm" data-title="CentOS操作系统安装DM达梦数据库" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DM/" rel="tag">DM</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20220405统信UOS操作系统安装MySQL数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
@@ -128,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6aug7rv000j88dt1x5ffq9a" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6dneq2a000i7cdtax2ccwe7" data-title="统信UOS操作系统安装MySQL数据库" class="article-share-link">分享</a>
       
       
       
@@ -185,7 +247,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl6aug7ry000n88dt7u0i4gb7" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/05/20220405VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E7%BB%9F%E4%BF%A1UOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl6dneq2d000m7cdt469o1bol" data-title="VMware安装统信UOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -243,7 +305,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6aug7rr000h88dther55r9d" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6dneq23000c7cdt3n1a1512" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
       
       
       
@@ -299,7 +361,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6aug7rh000688dt0fml758u" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="cl6dneq22000b7cdt50wq28dh" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
       
       
       
@@ -356,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl6aug7ri000788dt5d6zd0tj" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="cl6dneq2000077cdtdtam534t" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -416,7 +478,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/" data-id="cl6aug7rl000b88dt4bzv6gwz" data-title="Windows服务占用磁盘和CPU" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/" data-id="cl6dneq1z00067cdt80em4kss" data-title="Windows服务占用磁盘和CPU" class="article-share-link">分享</a>
       
       
       
@@ -486,7 +548,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="cl6aug7rb000288dt48ncf18k" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="cl6dneq1s00027cdth0t169x5" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
       
       
       
@@ -552,7 +614,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%20server%202019%E5%AE%89%E8%A3%85Hyper-V%E6%95%99%E7%A8%8B/" data-id="cl6aug7rg000588dt5urx9z9y" data-title="Windows server 2019安装Hyper-V教程" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%20server%202019%E5%AE%89%E8%A3%85Hyper-V%E6%95%99%E7%A8%8B/" data-id="cl6dneq1x00057cdt6irmbbea" data-title="Windows server 2019安装Hyper-V教程" class="article-share-link">分享</a>
       
       
       
@@ -621,7 +683,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl6aug7r8000188dt3mrcfru3" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl6dneq1k00007cdt5nn9hbew" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
       
       
       
@@ -650,7 +712,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">15</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">15</span></li></ul>
     </div>
   </div>
 
@@ -660,7 +722,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -670,7 +732,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CentOS/" style="font-size: 18px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 14px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 12px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 12px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16px;">Oracle</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 12px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 12px;">UOS</a> <a href="/tags/VMware/" style="font-size: 12px;">VMware</a>
+      <a href="/tags/CentOS/" style="font-size: 18.33px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 11.67px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 11.67px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 11.67px;">UOS</a> <a href="/tags/VMware/" style="font-size: 11.67px;">VMware</a>
     </div>
   </div>
 
@@ -679,7 +741,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
