@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   
   
-  <title>归档: 2022/4 | 河洛先生</title>
+  <title>河洛先生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Windows和Linux系统下软件的日常使用记录">
 <meta property="og:type" content="website">
 <meta property="og:title" content="河洛先生">
-<meta property="og:url" content="https://weaoe.org/archives/2022/04/index.html">
+<meta property="og:url" content="https://weaoe.org/page/4/index.html">
 <meta property="og:site_name" content="河洛先生">
 <meta property="og:description" content="Windows和Linux系统下软件的日常使用记录">
 <meta property="og:locale" content="zh_CN">
@@ -74,213 +74,80 @@
       <div class="outer">
         <section id="main">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-27T14:08:36.000Z" itemprop="datePublished">4月 27</time>
+    <article id="post-20200119Hexo部署更新说明" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" class="article-date">
+  <time class="dt-published" datetime="2020-01-19T14:11:55.000Z" itemprop="datePublished">2020-01-19</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/">常用软件收藏和下载</a>
+      <a class="p-name article-title" href="/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/">Hexo部署更新说明</a>
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-27T14:08:36.000Z" itemprop="datePublished">4月 27</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/">常用软件收藏和下载</a>
-    </h1>
-  
+        <hr>
+<p>主要记录hexo部署过程的一些配置，其中从标题2.0开始，设置主要对应hexo6.1版本</p>
+<img src="https://s2.loli.net/2022/06/06/QG2Z3wlDjH1MU6b.png" alt="hexo" style="zoom: 50%;" />
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-24T14:14:22.000Z" itemprop="datePublished">4月 24</time>
-</a>
+<h2 id="2-2屏蔽分享功能"><a href="#2-2屏蔽分享功能" class="headerlink" title="2.2屏蔽分享功能"></a>2.2屏蔽分享功能</h2><p>删除了\hexo\node_modules\hexo-theme-landscape\source\js目录下script.ejs文件58-63行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&lt;div class=&quot;article-share-links&quot;&gt;&#x27;,</span><br><span class="line">   &#x27;&lt;a href=&quot;https://twitter.com/intent/tweet?text=&#x27; + encodeURIComponent(title) + &#x27;&amp;url=&#x27; + encodedUrl + &#x27;&quot; class=&quot;article-share-twitter&quot; target=&quot;_blank&quot; title=&quot;Twitter&quot;&gt;&lt;/a&gt;&#x27;,</span><br><span class="line">   &#x27;&lt;a href=&quot;https://www.facebook.com/sharer.php?u=&#x27; + encodedUrl + &#x27;&quot; class=&quot;article-share-facebook&quot; target=&quot;_blank&quot; title=&quot;Facebook&quot;&gt;&lt;/a&gt;&#x27;,</span><br><span class="line">   &#x27;&lt;a href=&quot;http://pinterest.com/pin/create/button/?url=&#x27; + encodedUrl + &#x27;&quot; class=&quot;article-share-pinterest&quot; target=&quot;_blank&quot; title=&quot;Pinterest&quot;&gt;&lt;/a&gt;&#x27;,</span><br><span class="line">   &#x27;&lt;a href=&quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=&#x27; + encodedUrl + &#x27;&quot; class=&quot;article-share-linkedin&quot; target=&quot;_blank&quot; title=&quot;LinkedIn&quot;&gt;&lt;/a&gt;&#x27;,</span><br><span class="line">&#x27;&lt;/div&gt;&#x27;,</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-1删除cdn地址"><a href="#2-1删除cdn地址" class="headerlink" title="2.1删除cdn地址"></a>2.1删除cdn地址</h2><p>删除了\hexo\node_modules\hexo-theme-landscape\layout\_partial目录下head.ejs文件32-34行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (config.highlight.enable)&#123; %&gt;</span><br><span class="line">  &lt;%- css(&#x27;https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css&#x27;) %&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-0-配置信息目录"><a href="#2-0-配置信息目录" class="headerlink" title="2.0 配置信息目录"></a>2.0 配置信息目录</h2><ol>
+<li><p>主题目录：\hexo\node_modules\hexo-theme-landscape</p>
+</li>
+<li><p>banner目录：\hexo\node_modules\hexo-theme-landscape\source\css\images</p>
+</li>
+<li><p>favicon目录：\hexo\node_modules\hexo-theme-landscape\source</p>
+<p>注意：如果将favicon图标和banner放在一起，需要修改主题的配置文件为：favicon: “&#x2F;css&#x2F;images&#x2F;favicon.png”</p>
+</li>
+<li><p>站内搜索：\hexo\node_modules\hexo\lib\plugins\helper，将目录下search_form.js文件内的“google.com”修改为“bing.com”</p>
+</li>
+</ol>
+        
+          <p class="article-more-link">
+            <a href="/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/#more">更多</a>
+          </p>
+        
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux操作系统常用命令</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/08/20220408Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%A7%A3%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-08T14:10:49.000Z" itemprop="datePublished">4月 8</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="cl6yvx3cg0000lsdthkqbab46" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/08/20220408Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%A7%A3%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6/">Linux操作系统安装部署解压缩软件</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/07/20220407%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIIS/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-07T14:13:34.000Z" itemprop="datePublished">4月 7</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/07/20220407%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIIS/">远程命令管理Windows操作系统IIS</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/06/20220406%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-06T14:15:12.000Z" itemprop="datePublished">4月 6</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/06/20220406%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/">远程命令管理Windows操作系统服务</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-06T14:12:11.000Z" itemprop="datePublished">4月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fboot%E7%A9%BA%E9%97%B4%E4%B8%8D%E8%B6%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">CentOS操作系统boot空间不足的解决方法</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AEDotNet%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-06T14:11:10.000Z" itemprop="datePublished">4月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AEDotNet%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/">CentOS操作系统设置DotNet项目自动运行</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-06T14:10:19.000Z" itemprop="datePublished">4月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/06/20220406CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2DotNet%E9%A1%B9%E7%9B%AE/">CentOS操作系统部署DotNet项目</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-04-05T14:18:00.000Z" itemprop="datePublished">4月 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/05/20220405CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E8%BE%BE%E6%A2%A6%E6%95%B0%E6%8D%AE%E5%BA%93/">CentOS操作系统安装DM达梦数据库</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2022/04/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/04/page/2/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/3/">&laquo; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
   </nav>
 
 </section>
