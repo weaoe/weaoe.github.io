@@ -134,14 +134,14 @@
 <p>alter table TABLE_NAME disable ROW MOVEMENT;–关闭行移动</p>
 <h3 id="LOB建议"><a href="#LOB建议" class="headerlink" title="LOB建议"></a>LOB建议</h3><p>可能对一般的oracle dba或者其它人员，来说，并不是所有东西都要存入数据库，再设计表结构的时候（叫所谓的建模吧！），就应该考虑是否应该存在大字段，需要满足什么功能，好不好管理，对数据集的性能影响有多大？</p>
 <p>个人不太建议在数据库中使用大对象,可以使用外部表（管理方便，更加的简单粗暴），大对象所对应的表进行DML语句是，需要更大的开销，影响性能；比如，可以考虑做一个文件服务器，把需要的大对象按照一定的格式（如时间格式）存成文件，数据库中存放指定的地址就行，这样可以大大提高性能。</p>
-<p>原文参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hmwh/p/12380211.html"></a></p>
+<p>原文参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hmwh/p/12380211.html">Oracle的LOB（CLOB）大字段以及（SYS_LOB***$$）清理 - 翰墨文海 - 博客园 (cnblogs.com)</a></p>
 <hr>
 <h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/11/20220818%E5%88%A0%E9%99%A4Oracle%E7%9A%84%E5%A4%A7%E5%AD%97%E6%AE%B5%E5%8D%A0%E7%94%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6yvx3eo002klsdt9aij36a1" data-title="删除Oracle的大字段占用存储空间的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/11/20220818%E5%88%A0%E9%99%A4Oracle%E7%9A%84%E5%A4%A7%E5%AD%97%E6%AE%B5%E5%8D%A0%E7%94%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6zqhc6q002qj4dthbw63idh" data-title="删除Oracle的大字段占用存储空间的方法" class="article-share-link">分享</a>
       
       
       
@@ -197,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/01/20220801Oracle%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0[INS-30131]%E9%94%99%E8%AF%AF%20-%20%E5%89%AF%E6%9C%AC/" data-id="cl6yvx3ei002dlsdt6ugna8kp" data-title="Oracle安装过程出现[INS-30131]错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/01/20220801Oracle%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0[INS-30131]%E9%94%99%E8%AF%AF%20-%20%E5%89%AF%E6%9C%AC/" data-id="cl6zqhc6m002fj4dt2trsge4j" data-title="Oracle安装过程出现[INS-30131]错误" class="article-share-link">分享</a>
       
       
       
@@ -266,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6yvx3el002hlsdt9wre6y0y" data-title="Postman使用MD5加密签名的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6zqhc6k002cj4dt618qacsg" data-title="Postman使用MD5加密签名的方法" class="article-share-link">分享</a>
       
       
       
@@ -329,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6yvx3ee0026lsdt1gtvgjbx" data-title=".NET Core项目部署到IIS服务的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6zqhc6i0028j4dtg32dbqyr" data-title=".NET Core项目部署到IIS服务的方法" class="article-share-link">分享</a>
       
       
       
@@ -390,7 +390,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6yvx3eg002alsdtdeer5ic5" data-title="Visual Studio发布.NET Core项目的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cl6zqhc6o002jj4dt2dc1ea0e" data-title="Visual Studio发布.NET Core项目的方法" class="article-share-link">分享</a>
       
       
       
@@ -449,7 +449,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" data-id="cl6yvx3e4001ulsdt1dbsgnkw" data-title="Toad for Oracle 13安装使用说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" data-id="cl6zqhc6b0020j4dth1um3oj1" data-title="Toad for Oracle 13安装使用说明" class="article-share-link">分享</a>
       
       
       
@@ -540,7 +540,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" data-id="cl6yvx3e6001ylsdtecp93f7e" data-title="常用Oracle数据库命令" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" data-id="cl6zqhc68001sj4dt2byve7i8" data-title="常用Oracle数据库命令" class="article-share-link">分享</a>
       
       
       
@@ -600,7 +600,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="cl6yvx3e90022lsdt9sdqgy3s" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="cl6zqhc6d0024j4dte15xg7ct" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
       
       
       
@@ -669,7 +669,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="cl6yvx3e2001qlsdt6gbydvo6" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="cl6zqhc69001wj4dtabnv390z" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
       
       
       
@@ -724,7 +724,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="cl6yvx3e0001mlsdt0y25f1vy" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="cl6zqhc66001oj4dtdbqv8449" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
       
       
       
