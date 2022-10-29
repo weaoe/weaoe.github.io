@@ -8,7 +8,7 @@ tags:
 
 Windows服务器安装PostgreSQL数据库
 
-<img src="https://weaoe.com/hexo/img/2022102900.jpg" alt="winserver" style="zoom: 80%;" />
+<img src="https://weaoe.com/hexo/img/2022102900.png" alt="winserver" style="zoom: 80%;" />
 
 ## 下载
 
