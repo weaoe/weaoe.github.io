@@ -8,7 +8,7 @@ tags:
 
 Windows服务器安装PostgreSQL数据库
 
-<img src="https://weaoe.com/hexo/img/2022102900.png" alt="winserver" style="zoom: 80%;" />
+<img src="https://weaoe.com/hexo/img/2022102900.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 ## 下载
 
@@ -32,47 +32,47 @@ Windows服务器安装PostgreSQL数据库
 
   <!--more-->
 
-  <img src="https://weaoe.com/hexo/img/2022102901.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102901.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第二步  选择数据库软件安装目录
 
-  <img src="https://weaoe.com/hexo/img/2022102902.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102902.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第三步  选择安装的数据库组件
 
-  <img src="https://weaoe.com/hexo/img/2022102903.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102903.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第四步  选择数据库文件的存储目录
 
-  <img src="https://weaoe.com/hexo/img/2022102904.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102904.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第五步  设置默认用户postgresql的密码
 
-  <img src="https://weaoe.com/hexo/img/2022102905.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102905.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第六步  设置数据库默认端口
 
-  <img src="https://weaoe.com/hexo/img/2022102906.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102906.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第七步  选择数据库区域语言，默认和操作系统一致
 
-  <img src="https://weaoe.com/hexo/img/2022102907.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102907.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第八步  确认安装参数，点击下一步
 
-  <img src="https://weaoe.com/hexo/img/2022102908.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102908.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第九步  点击下一步进行安装
 
-  <img src="https://weaoe.com/hexo/img/2022102909.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102909.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第十步  等待安装
 
-  <img src="https://weaoe.com/hexo/img/2022102910.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102910.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 - 第十一步  取消选择框，点击完成
 
-  <img src="https://weaoe.com/hexo/img/2022102911.png" alt="winserver" style="zoom: 80%;" />
+  <img src="https://weaoe.com/hexo/img/2022102911.png" alt="PostgreSQL" style="zoom: 80%;" />
 
 
 
