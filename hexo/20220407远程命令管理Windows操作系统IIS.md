@@ -53,7 +53,7 @@ iisreset -noforce或者iisreset /noforce
 iisreset -timeout:x或者iisreset /timeout:x
 ```
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
 
 ---
 

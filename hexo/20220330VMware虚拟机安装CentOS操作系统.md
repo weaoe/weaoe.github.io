@@ -122,7 +122,7 @@ unrar x test.rar DestPath　　#解压（会在当前解压目录内产生一个
 
 方法二：使用命令 sudo su 切换到root用户，然后在执行命令。
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
 
 ---
 

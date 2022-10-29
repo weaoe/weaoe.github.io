@@ -85,7 +85,7 @@ tags:
 
 下载地址：[Releases · microsoft/PowerToys · GitHub](https://github.com/microsoft/PowerToys/releases)
 
-原文地址：[Release Release v0.61.0 · microsoft/PowerToys · GitHub](https://github.com/microsoft/PowerToys/releases/tag/v0.61.0)<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+原文地址：[Release Release v0.61.0 · microsoft/PowerToys · GitHub](https://github.com/microsoft/PowerToys/releases/tag/v0.61.0)
 
 ---
 

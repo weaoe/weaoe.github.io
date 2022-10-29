@@ -128,7 +128,7 @@ Hyper-V的功能到此已经安装完成，接下来可以创建虚拟机、安�
 
 <img src="https://s2.loli.net/2022/06/25/Wu6UdmFerPRIDC9.png" alt="image017" style="zoom:80%;" />
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
 
 ---
 

@@ -94,7 +94,7 @@ Visual Studio的.NET Core跨平台开发功能，帮助用户实现一次开发�
 
 <img src="https://s2.loli.net/2022/06/25/cqzj5xbPTmNitpr.png" alt="image010" style="zoom:80%;" />
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
 
 ---
 

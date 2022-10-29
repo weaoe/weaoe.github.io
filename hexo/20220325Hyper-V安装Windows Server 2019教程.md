@@ -164,8 +164,6 @@ Windows server 2019 安装Hyper-V具体图文说明如下
 
 
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
-
 ---
 
 ## <center>欢迎关注公众号收藏小程序</center>

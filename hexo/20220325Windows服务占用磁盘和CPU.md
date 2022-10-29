@@ -36,7 +36,7 @@ Microsoft Compatibility Telemetry是微软下的一个监测数据收集服务�
 
 <img src="https://s2.loli.net/2022/06/25/hacvbUXC3nxqNLK.png" alt="image006" style="zoom:80%;" />
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
+
 
 ---
 

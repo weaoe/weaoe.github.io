@@ -110,8 +110,6 @@ chkconfig --list otfapi.sh
 
 
 
-<img src="https://s2.loli.net/2022/06/24/cxZCrmoFPD5JSuv.gif" style="zoom:80%;" />
-
 ---
 
 ## <center>欢迎关注公众号收藏小程序</center>
