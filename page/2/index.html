@@ -74,6 +74,97 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20220624常用Oracle数据库命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time class="dt-published" datetime="2022-06-24T14:15:23.000Z" itemprop="datePublished">2022-06-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/">常用Oracle数据库命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>本文主要用于记录常用的Oracle基本命令，由于多使用图形工具进行查询，命令使用较少，便于个人在以后使用时参考，其中有不正确的地方请指正。</p>
+<img src="https://s2.loli.net/2022/06/24/68pVkWZSHcPBzxv.jpg" alt="image002" style="zoom:80%;" />
+
+<p>本文主要用于记录常用的Oracle基本命令，由于多使用图形工具进行查询，命令使用较少，便于个人在以后使用时参考，其中有不正确的地方请指正。</p>
+<h3 id="1-查看Oracle版本"><a href="#1-查看Oracle版本" class="headerlink" title="1.查看Oracle版本"></a>1.查看Oracle版本</h3><p>select * from product_component_version;</p>
+<h3 id="2-表管理命令"><a href="#2-表管理命令" class="headerlink" title="2.表管理命令"></a>2.表管理命令</h3><p>创建table：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE AAA(AA VARCHAR (5),BB VARCHAR (10), CC VARCHAR (90));</span><br></pre></td></tr></table></figure>
+
+<p>删除table：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE AAA;</span><br></pre></td></tr></table></figure>
+
+<p>增加column：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE AA ADD FNAME NUMBER NOT NULL;</span><br><span class="line"></span><br><span class="line">ALTER TABLE AA ADD FID VARCHAR (100) PRIMARY KEY;</span><br></pre></td></tr></table></figure>
+
+<p>增加value</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO AA (A, B) VALUES (&#x27;12345&#x27;, &#x27;9099889&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p>更新value</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE AA SET A = &#x27;000&#x27; WHERE AA.B = &#x27;9&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>删除value</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM IPOUSER.AA WHERE AA.A = &#x27;00000&#x27;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-表查询命令"><a href="#3-表查询命令" class="headerlink" title="3.表查询命令"></a>3.表查询命令</h3><p>基础查询：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT A.B.FCODINGS AS 代码,A.B.FNAME AS 名称 FROM A.B;</span><br></pre></td></tr></table></figure>
+
+<p>BETWEEN用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT A.B.C,A.B.D FROM A.B WHERE A.B.C BETWEEN &#x27;210882&#x27; AND &#x27;250883&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>AND和OR用法:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM A.B WHERE A.B.FKINDNAME = &#x27;ABC&#x27; AND (A.B.FNAME = &#x27;威克岛&#x27; OR A.B.FNAME = &#x27;津巴布韦&#x27;);</span><br></pre></td></tr></table></figure>
+
+<p>ORDER BY用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM A.B ORDER BY A.B.FID ASC;</span><br></pre></td></tr></table></figure>
+
+<p>ROWNUM用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM A.B WHERE ROWNUM &lt;= 10;</span><br></pre></td></tr></table></figure>
+
+<p>LIKE用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM A.B WHERE A.B.FNAME LIKE &#x27;_南省%&#x27;;</span><br><span class="line"></span><br><span class="line">SELECT * FROM A.B WHERE A.B.FNAME LIKE &#x27;_南_郑_市%&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>IN用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM A.B WHERE FNAME IN (&#x27;河南省郑州市&#x27;, &#x27;河南省洛阳市&#x27;);</span><br><span class="line"></span><br><span class="line">SELECT * FROM TCODEENTRYS WHERE FCODINGS IN (SELECT FCODINGS FROM TCODEENTRYS WHERE FCODINGS &gt; &#x27;5000&#x27;);</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/#more">更多</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" data-id="cl9tollhc001y3cdtbzgc9o1c" data-title="常用Oracle数据库命令" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20220624解决连接Oracle12C的ORA-28040错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" class="article-date">
@@ -120,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="cl9tkob8j0022n0dtfzqphzmn" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="cl9tollhe00223cdtcihp9yka" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
       
       
       
@@ -189,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="cl9tkob8e001qn0dtc6i7cjk8" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="cl9tollh9001q3cdt02e210nx" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
       
       
       
@@ -244,7 +335,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="cl9tkob8c001mn0dtg33f24h8" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="cl9tollh8001m3cdt3qch86ff" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
       
       
       
@@ -301,7 +392,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/" data-id="cl9tkob8a001in0dt2uth3fkw" data-title="xshell连接Windows乱码和退格键无效" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/" data-id="cl9tollh6001i3cdthxx4btao" data-title="xshell连接Windows乱码和退格键无效" class="article-share-link">分享</a>
       
       
       
@@ -371,7 +462,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1/" data-id="cl9tkob88001en0dt439a7z4x" data-title="Windows操作系统部署OpenSSH服务" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1/" data-id="cl9tollh5001e3cdt24e5g3ic" data-title="Windows操作系统部署OpenSSH服务" class="article-share-link">分享</a>
       
       
       
@@ -452,7 +543,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/" data-id="cl9tkob86001an0dtdpptgamp" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/" data-id="cl9tollh2001a3cdtgrg66u0d" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
       
       
       
@@ -564,7 +655,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/" data-id="cl9tkob8u002kn0dt0hdo6wxt" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/" data-id="cl9tollhp002k3cdtbmb02as3" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
       
       
       
@@ -636,7 +727,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="cl9tkob840016n0dta5re1niz" data-title="Linux操作系统常用命令" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/24/20220424Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="cl9tollh100163cdtgj69797q" data-title="Linux操作系统常用命令" class="article-share-link">分享</a>
       
       
       
@@ -696,76 +787,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/08/20220408Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%A7%A3%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6/" data-id="cl9tkob81000zn0dtcopya27g" data-title="Linux操作系统安装部署解压缩软件" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/08/20220408Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E8%A7%A3%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6/" data-id="cl9tollh000133cdtagoh70im" data-title="Linux操作系统安装部署解压缩软件" class="article-share-link">分享</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-20220407远程命令管理Windows操作系统IIS" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/07/20220407%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIIS/" class="article-date">
-  <time class="dt-published" datetime="2022-04-07T14:13:34.000Z" itemprop="datePublished">2022-04-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Windows/">Windows</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/07/20220407%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIIS/">远程命令管理Windows操作系统IIS</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>远程命令管理Windows服务器的iis系统服务，在无需远程服务器的情况下启动、停止、查询IIS服务。</p>
-<img src="https://s2.loli.net/2022/06/06/AwjHuEGDgPKLNb7.jpg" alt="IIS" style="zoom: 80%;" />
-
-<h3 id="1、启动IIS"><a href="#1、启动IIS" class="headerlink" title="1、启动IIS"></a>1、启动IIS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -start或者iisreset /start</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、停止IIS"><a href="#2、停止IIS" class="headerlink" title="2、停止IIS"></a>2、停止IIS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -stop或者iisreset /stop</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、重启IIS"><a href="#3、重启IIS" class="headerlink" title="3、重启IIS"></a>3、重启IIS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -restart或者iisreset /restart</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、重启服务器"><a href="#4、重启服务器" class="headerlink" title="4、重启服务器"></a>4、重启服务器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -reboot或者iisreset /reboot</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、停止IIS服务失败重启电脑"><a href="#5、停止IIS服务失败重启电脑" class="headerlink" title="5、停止IIS服务失败重启电脑"></a>5、停止IIS服务失败重启电脑</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -rebootonerror或者iisreset /rebootonerror</span><br></pre></td></tr></table></figure>
-
-<h3 id="6、无需强制停止IIS服务"><a href="#6、无需强制停止IIS服务" class="headerlink" title="6、无需强制停止IIS服务"></a>6、无需强制停止IIS服务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -noforce或者iisreset /noforce</span><br></pre></td></tr></table></figure>
-
-<h3 id="7、X秒后-强制停止IIS服务-除非添加-x2F-NOFORCE-参数"><a href="#7、X秒后-强制停止IIS服务-除非添加-x2F-NOFORCE-参数" class="headerlink" title="7、X秒后,强制停止IIS服务,除非添加&#x2F;NOFORCE 参数"></a>7、X秒后,强制停止IIS服务,除非添加&#x2F;NOFORCE 参数</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iisreset -timeout:x或者iisreset /timeout:x</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/07/20220407%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E7%AE%A1%E7%90%86Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIIS/" data-id="cl9tkob830013n0dtcvn512bn" data-title="远程命令管理Windows操作系统IIS" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IIS/" rel="tag">IIS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/System/" rel="tag">System</a></li></ul>
 
     </footer>
   </div>
@@ -790,7 +816,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">17</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">18</span></li></ul>
     </div>
   </div>
 
@@ -800,7 +826,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostgreSQL/" rel="tag">PostgreSQL</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -810,7 +836,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CentOS/" style="font-size: 18.33px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 11.67px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 11.67px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 11.67px;">UOS</a> <a href="/tags/VMware/" style="font-size: 11.67px;">VMware</a> <a href="/tags/book/" style="font-size: 11.67px;">book</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
+      <a href="/tags/CentOS/" style="font-size: 18.33px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 11.67px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 11.67px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/PostgreSQL/" style="font-size: 10px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 11.67px;">UOS</a> <a href="/tags/VMware/" style="font-size: 11.67px;">VMware</a> <a href="/tags/book/" style="font-size: 11.67px;">book</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
     </div>
   </div>
 
@@ -819,7 +845,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -830,6 +856,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/09/30/20221029Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/">Windows服务器安装PostgreSQL数据库</a>
+          </li>
         
           <li>
             <a href="/2022/09/30/20220930%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84%E6%96%B9%E6%B3%95/">批处理命令执行中文路径方法</a>
@@ -845,10 +875,6 @@
         
           <li>
             <a href="/2022/08/11/20220818%E5%88%A0%E9%99%A4Oracle%E7%9A%84%E5%A4%A7%E5%AD%97%E6%AE%B5%E5%8D%A0%E7%94%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%96%B9%E6%B3%95/">删除Oracle的大字段占用存储空间的方法</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/01/20220801Oracle%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0%5BINS-30131%5D%E9%94%99%E8%AF%AF/">Oracle安装过程出现[INS-30131]错误</a>
           </li>
         
       </ul>
