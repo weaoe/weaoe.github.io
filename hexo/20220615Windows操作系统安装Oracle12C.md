@@ -28,6 +28,8 @@ Oracle数据库12c引入了一个新的多承租方架构，使用该架构可�
 
 双击setup.exe，启动安装程序，可以取消“我希望通过……”，然后点击“下一步”，弹出“尚未提供电子邮件地址”的提示窗口，直接点击“是”即可。
 
+<!--more-->
+
 <img src="https://s2.loli.net/2022/06/15/nMwCsl4tLbXIVHD.png" alt="img" style="zoom:80%;" />
 
 <img src="https://s2.loli.net/2022/06/15/NQtZJgU1ACep87x.png" alt="img" style="zoom:80%;" />
@@ -46,7 +48,7 @@ Oracle数据库12c引入了一个新的多承租方架构，使用该架构可�
 
 <img src="https://s2.loli.net/2022/06/15/XDEWra3KAivGwqm.png" alt="img" style="zoom:80%;" />
 
-<!--more-->
+
 
 ### 第四步
 

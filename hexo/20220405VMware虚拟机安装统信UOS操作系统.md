@@ -32,7 +32,7 @@ vi /etc/ssh/sshd_config
 systemctl restart ssh
 ```
 
-
+<!--more-->
 
 ---
 

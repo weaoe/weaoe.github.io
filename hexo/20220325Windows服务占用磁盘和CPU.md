@@ -26,9 +26,11 @@ Microsoft Compatibility Telemetry是微软下的一个监测数据收集服务�
 
 3、在该任务计划上点击右键禁用该任务计划；
 
+<!--more-->
+
 <img src="https://s2.loli.net/2022/06/25/GAmEFXK5OyeisVY.png" alt="image004" style="zoom:80%;" />
 
-<!--more-->
+
 
 4、任务计划改为禁用状态后，以后计划任务不会再执行，如果想立刻降低硬盘和CPU的，可以通过任务管理器结束任务；
 

@@ -30,7 +30,7 @@ Windows server 2019 安装Hyper-V具体图文说明如下
 
 <img src="https://s2.loli.net/2022/06/25/Wu6UdmFerPRIDC9.png" alt="image001" style="zoom:80%;" />
 
- 
+ <!--more-->
 
 ### 第二步
 
@@ -46,7 +46,7 @@ Windows server 2019 安装Hyper-V具体图文说明如下
 
   <img src="https://s2.loli.net/2022/06/25/NRJPI8oAQ74bE3m.png" alt="image003" style="zoom:80%;" />
 
-<!--more-->
+
 
 ### 第四步
 
