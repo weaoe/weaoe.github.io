@@ -1,6 +1,6 @@
 ---
 title: Windows服务器安装PostgreSQL数据库
-date: 2022-09-30 22:16:32
+date: 2022-10-29 22:22:49
 category: Windows
 tags: 
     - PostgreSQL
