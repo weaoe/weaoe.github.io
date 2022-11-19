@@ -49,12 +49,10 @@ shutdown -r now
 vi /etc/systemd/system/kgdit.service
 //在文件中粘贴如下内容，WorkingDirectory为项目路径，ExecStart为启动指令
 [Unit]
-Description=kgdit
+Description=GPRApp
 After=default.target
-
 [Service]
-ExecStart=/home/kgdit/kgsoft/kgdit.sh
-
+ExecStart=/home/kgdit/kgsoft/GPRApp
 [Install]
 WantedBy=default.target
 
@@ -72,7 +70,38 @@ shutdown -r now
 
 <!--more-->
 
-### 方法三：通过命令运行，项目集成运行环境
+### 方法三：通过服务运行，项目集成运行环境
+
+```
+//在 /etc/systemd/system目录下创建xxx.service文件，kgdit.service
+vi /etc/systemd/system/kgdit.service
+//在文件中粘贴如下内容，WorkingDirectory为项目路径，ExecStart为启动指令
+[Unit]
+Description=kgdit
+After=default.target
+[Service]
+ExecStart=/home/kgdit/kgsoft/kgdit.sh
+[Install]
+WantedBy=default.target
+
+//使启动生效
+systemctl enable kgdit.service
+//立即启动项目服务
+systemctl start kgdit.service
+//重新加载服务
+systemctl daemon-reload
+//查看服务状态
+systemctl status kgdit.service
+//重启服务器看是否生效
+shutdown -r now
+
+//sh命令内容如下：
+#! /bin/bash
+./GPRApp
+
+```
+
+### 方法四：通过命令运行，项目集成运行环境
 
 ```
 //创建.sh命令执行文件,内容如下
