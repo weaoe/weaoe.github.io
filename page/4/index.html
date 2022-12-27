@@ -76,6 +76,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20220404CentOS7操作系统安装Oracle11G数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
+  <time class="dt-published" datetime="2022-04-04T14:21:03.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/">CentOS7安装Oracle11G数据库</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>CentOS7操作系统安装Oracle11G数据库步骤：</p>
+<img src="https://s2.loli.net/2022/06/06/vkiqp7ATZIMhdCK.png" alt="oracle" style="zoom:50%;" />
+
+<h3 id="1、创建用户和组"><a href="#1、创建用户和组" class="headerlink" title="1、创建用户和组"></a>1、创建用户和组</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">groupadd oinstall</span><br><span class="line">groupadd dba</span><br><span class="line">useradd -g oinstall -g dba -m oracle</span><br><span class="line">passwd oracle</span><br><span class="line">id oracle</span><br></pre></td></tr></table></figure>
+
+<p>Oracle用户密码：nitd***6888</p>
+<p>system用户密码：nitd***6888</p>
+<h3 id="2、创建目录"><a href="#2、创建目录" class="headerlink" title="2、创建目录"></a>2、创建目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/oracle　　#oracle数据库安装目录</span><br><span class="line">mkdir -p /data/oraInventory　　#oracle数据库配置文件目录</span><br><span class="line">mkdir -p /data/database　　#oracle数据库软件包解压目录</span><br><span class="line">cd /data</span><br><span class="line">ls　　#创建完毕检查一下</span><br><span class="line">chown -R oracle:oinstall /data/oracle　　#设置目录所有者为oinstall用户组的oracle用户</span><br><span class="line">chown -R oracle:oinstall /data/oraInventory</span><br><span class="line">chown -R oracle:oinstall /data/database</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、修改系统信息"><a href="#3、修改系统信息" class="headerlink" title="3、修改系统信息"></a>3、修改系统信息</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/version</span><br><span class="line">cat /etc/redhat-release		#查看redhat-release文件</span><br><span class="line">vi /etc/redhat-release 		#修改redhat-release文件，将类似于 CentOS Linux release 7.2.1511 (Core) 的内容替换为redhat-7</span><br><span class="line">cat /etc/redhat-release 	#看一下是不是真的保存好了</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/#more">更多</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/04/04/20220404CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle11G%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5tchs0000d28dt2ysk1hn3" data-title="CentOS7安装Oracle11G数据库" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20220401CentOS7操作系统安装MySQL8数据库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" class="article-date">
@@ -118,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clb3dxe5j000bvgdt7ipu6bgm" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/01/20220401CentOS7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85MySQL8%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5tchrx000b28dt56habhxv" data-title="CentOS7安装MySQL8数据库" class="article-share-link">分享</a>
       
       
       
@@ -175,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="clb3dxe5h0007vgdtebs053tn" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/30/20220330VMware%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85CentOS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" data-id="clc5tchrs000628dtht6le5gi" data-title="VMware虚拟机安装CentOS操作系统" class="article-share-link">分享</a>
       
       
       
@@ -234,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/" data-id="clb3dxe5g0006vgdtgqp41w6o" data-title="Windows服务占用磁盘和CPU" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%E6%9C%8D%E5%8A%A1%E5%8D%A0%E7%94%A8%E7%A3%81%E7%9B%98%E5%92%8CCPU/" data-id="clc5tchrt000728dt6ev3gj6c" data-title="Windows服务占用磁盘和CPU" class="article-share-link">分享</a>
       
       
       
@@ -294,7 +352,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="clb3dxe580002vgdt3qz2b0oz" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Hyper-V%E5%AE%89%E8%A3%85Windows%20Server%202019%E6%95%99%E7%A8%8B/" data-id="clc5tchrb000028dt8ojgd7bm" data-title="Hyper-V安装Windows server 2019教程" class="article-share-link">分享</a>
       
       
       
@@ -360,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%20server%202019%E5%AE%89%E8%A3%85Hyper-V%E6%95%99%E7%A8%8B/" data-id="clb3dxe5e0005vgdt8xc9dz05" data-title="Windows server 2019安装Hyper-V教程" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/03/25/20220325Windows%20server%202019%E5%AE%89%E8%A3%85Hyper-V%E6%95%99%E7%A8%8B/" data-id="clc5tchrl000228dtb4w0bs4d" data-title="Windows server 2019安装Hyper-V教程" class="article-share-link">分享</a>
       
       
       
@@ -429,7 +487,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="clb3dxe500000vgdtgfq22r77" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2020/01/19/20200119Hexo%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E/" data-id="clc5tchrq000528dtgbqj16ne" data-title="Hexo部署更新说明" class="article-share-link">分享</a>
       
       
       
@@ -458,7 +516,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">19</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">19</span></li></ul>
     </div>
   </div>
 
@@ -468,7 +526,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostgreSQL/" rel="tag">PostgreSQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostgreSQL/" rel="tag">PostgreSQL</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -478,7 +536,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/CentOS/" style="font-size: 18.33px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 11.67px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 11.67px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/PostgreSQL/" style="font-size: 11.67px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 11.67px;">UOS</a> <a href="/tags/VMware/" style="font-size: 11.67px;">VMware</a> <a href="/tags/book/" style="font-size: 11.67px;">book</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
+      <a href="/tags/CentOS/" style="font-size: 18.33px;">CentOS</a> <a href="/tags/DM/" style="font-size: 10px;">DM</a> <a href="/tags/DotNet/" style="font-size: 15px;">DotNet</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IIS/" style="font-size: 10px;">IIS</a> <a href="/tags/MySQL/" style="font-size: 11.67px;">MySQL</a> <a href="/tags/OpenSSH/" style="font-size: 11.67px;">OpenSSH</a> <a href="/tags/Oracle/" style="font-size: 16.67px;">Oracle</a> <a href="/tags/PostgreSQL/" style="font-size: 13.33px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 10px;">Postman</a> <a href="/tags/Software/" style="font-size: 13.33px;">Software</a> <a href="/tags/System/" style="font-size: 20px;">System</a> <a href="/tags/UOS/" style="font-size: 11.67px;">UOS</a> <a href="/tags/VMware/" style="font-size: 11.67px;">VMware</a> <a href="/tags/book/" style="font-size: 11.67px;">book</a> <a href="/tags/system/" style="font-size: 10px;">system</a>
     </div>
   </div>
 
@@ -487,7 +545,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">十二月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -498,6 +556,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/12/27/20221227Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/">Linux服务器安装PostgreSQL数据库</a>
+          </li>
         
           <li>
             <a href="/2022/10/30/20221030IIS%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99%E5%87%BA%E7%8E%B0.SVC%E8%AF%B7%E6%B1%82%E7%B1%BB%E5%9E%8B%E4%B8%8D%E6%94%AF%E6%8C%81/">IIS发布网站出现.SVC请求类型不支持</a>
@@ -513,10 +575,6 @@
         
           <li>
             <a href="/2022/08/24/20220824%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E8%AF%AD%E8%A8%80%E6%98%AF%E7%AA%97%E6%88%B7/">阅读@非暴力沟通-语言是窗户</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/19/20220819%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E5%89%8D%E8%A8%80/">阅读@非暴力沟通-前言</a>
           </li>
         
       </ul>
