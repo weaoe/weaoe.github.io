@@ -81,7 +81,7 @@ grant all privileges on database test_db to test_user;   // 授权
 ```
 alter role postgres with password 'your_pwd';
 ```
-
+<!--more-->
 ### 设置远程连接数据库
 
 1、编辑文件postgresql.conf

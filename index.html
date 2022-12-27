@@ -57,8 +57,6 @@
         
           <a class="main-nav-link" href="/categories/Windows/">Windows</a>
         
-          <a class="main-nav-link" href="/categories/English/">英语朗读</a>
-        
           <a class="main-nav-link" href="/about">关于</a>
         
       </nav>
@@ -140,29 +138,15 @@
 
 <p>如果不创建用户可以使用数据库默认的用户postgres，可以登录数据库后修改用户密码，然后创建数据库并授权；</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter role postgres with password &#x27;your_pwd&#x27;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="设置远程连接数据库"><a href="#设置远程连接数据库" class="headerlink" title="设置远程连接数据库"></a>设置远程连接数据库</h3><p>1、编辑文件postgresql.conf</p>
-<p>文件路径为&#x2F;var&#x2F;lib&#x2F;pgsql&#x2F;15&#x2F;data&#x2F;postgresql.conf，取消 listen_addresses的注释并将值改为“*”，取消port的注释；</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">listen_addresses = &#x27;*&#x27;</span><br><span class="line">port = 5432</span><br></pre></td></tr></table></figure>
-
-<p>2、编辑文件pg_hba.conf</p>
-<p>文件路径为&#x2F;var&#x2F;lib&#x2F;pgsql&#x2F;12&#x2F;data&#x2F;pg_hba.conf，在最后添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">host    all    all    0.0.0.0/0    md5</span><br></pre></td></tr></table></figure>
-
-<p>3、重启数据库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart postgresql-15</span><br></pre></td></tr></table></figure>
-
-<p>4、关闭防火墙</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld.service  查看状态</span><br><span class="line">systemctl stop firewalld.service  停止</span><br><span class="line">systemctl start firewalld.service  启动</span><br><span class="line">systemctl disable firewalld.service  禁止开机自启</span><br></pre></td></tr></table></figure>
-
-<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><p>Dbeaver</p>
-<hr>
-<h2 id="欢迎关注公众号收藏小程序"><a href="#欢迎关注公众号收藏小程序" class="headerlink" title="欢迎关注公众号收藏小程序"></a><center>欢迎关注公众号收藏小程序</center></h2><p><img src="https://s2.loli.net/2022/06/23/bYdtKDC2U5J7iWr.jpg" alt="河洛先生"><img src="https://s2.loli.net/2022/06/23/PlUgz5KSHm7OBke.jpg" alt="河洛先生"></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2022/12/27/20221227Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/#more">更多</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/12/27/20221227Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5uvhw00033zgdt8m8t4i6x" data-title="Linux服务器安装PostgreSQL数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/12/27/20221227Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5y0t2a0036rcdtc17uejbl" data-title="Linux服务器安装PostgreSQL数据库" class="article-share-link">分享</a>
       
       
       
@@ -218,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/10/30/20221030IIS%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99%E5%87%BA%E7%8E%B0.SVC%E8%AF%B7%E6%B1%82%E7%B1%BB%E5%9E%8B%E4%B8%8D%E6%94%AF%E6%8C%81/" data-id="clc5uvhwq004rzgdt30744l1l" data-title="IIS发布网站出现.SVC请求类型不支持" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/10/30/20221030IIS%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99%E5%87%BA%E7%8E%B0.SVC%E8%AF%B7%E6%B1%82%E7%B1%BB%E5%9E%8B%E4%B8%8D%E6%94%AF%E6%8C%81/" data-id="clc5y0t270032rcdt1axy97sq" data-title="IIS发布网站出现.SVC请求类型不支持" class="article-share-link">分享</a>
       
       
       
@@ -282,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/10/29/20221029Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5uvhvy002zzgdta81bh823" data-title="Windows服务器安装PostgreSQL数据库" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/10/29/20221029Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/" data-id="clc5y0t26002yrcdteq4hgw6m" data-title="Windows服务器安装PostgreSQL数据库" class="article-share-link">分享</a>
       
       
       
@@ -338,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/09/30/20220930%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84%E6%96%B9%E6%B3%95/" data-id="clc5uvhwr004szgdt58iz8run" data-title="批处理命令执行中文路径方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/09/30/20220930%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84%E6%96%B9%E6%B3%95/" data-id="clc5y0t2u004vrcdtes1a43ry" data-title="批处理命令执行中文路径方法" class="article-share-link">分享</a>
       
       
       
@@ -400,7 +384,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/24/20220824%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E8%AF%AD%E8%A8%80%E6%98%AF%E7%AA%97%E6%88%B7/" data-id="clc5uvhvw002vzgdtfls32vov" data-title="阅读@非暴力沟通-语言是窗户" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/24/20220824%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E8%AF%AD%E8%A8%80%E6%98%AF%E7%AA%97%E6%88%B7/" data-id="clc5y0t24002vrcdt8ympdge9" data-title="阅读@非暴力沟通-语言是窗户" class="article-share-link">分享</a>
       
       
       
@@ -456,7 +440,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/19/20220819%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E5%89%8D%E8%A8%80/" data-id="clc5uvhvv002rzgdt9o3m6yx7" data-title="阅读@非暴力沟通-前言" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/19/20220819%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E5%89%8D%E8%A8%80/" data-id="clc5y0t21002orcdtf7pu4ebv" data-title="阅读@非暴力沟通-前言" class="article-share-link">分享</a>
       
       
       
@@ -513,7 +497,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/11/20220818%E5%88%A0%E9%99%A4Oracle%E7%9A%84%E5%A4%A7%E5%AD%97%E6%AE%B5%E5%8D%A0%E7%94%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5uvhvu002ozgdt2z440ozu" data-title="删除Oracle的大字段占用存储空间的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/11/20220818%E5%88%A0%E9%99%A4Oracle%E7%9A%84%E5%A4%A7%E5%AD%97%E6%AE%B5%E5%8D%A0%E7%94%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5y0t22002rrcdt1lfk52o6" data-title="删除Oracle的大字段占用存储空间的方法" class="article-share-link">分享</a>
       
       
       
@@ -568,7 +552,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/08/01/20220801Oracle%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0[INS-30131]%E9%94%99%E8%AF%AF/" data-id="clc5uvhvr002hzgdt4q9s4iro" data-title="Oracle安装过程出现[INS-30131]错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/08/01/20220801Oracle%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0[INS-30131]%E9%94%99%E8%AF%AF/" data-id="clc5y0t1x002hrcdtbt4geqyy" data-title="Oracle安装过程出现[INS-30131]错误" class="article-share-link">分享</a>
       
       
       
@@ -637,7 +621,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5uvhvm002azgdth745bpm6" data-title="Postman使用MD5加密签名的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625Postman%E4%BD%BF%E7%94%A8MD5%E5%8A%A0%E5%AF%86%E7%AD%BE%E5%90%8D%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5y0t1u002arcdthuhgcd34" data-title="Postman使用MD5加密签名的方法" class="article-share-link">分享</a>
       
       
       
@@ -700,7 +684,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5uvhvl0026zgdt5gri33i7" data-title=".NET Core项目部署到IIS服务的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5y0t1s0026rcdt0cud4fbb" data-title=".NET Core项目部署到IIS服务的方法" class="article-share-link">分享</a>
       
       
       
@@ -819,8 +803,6 @@
     <a href="/categories/Linux/" class="mobile-nav-link">Linux</a>
   
     <a href="/categories/Windows/" class="mobile-nav-link">Windows</a>
-  
-    <a href="/categories/English/" class="mobile-nav-link">英语朗读</a>
   
     <a href="/about" class="mobile-nav-link">关于</a>
   
