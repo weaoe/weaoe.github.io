@@ -43,31 +43,38 @@ rpm -ivh postgresql15-contrib-15.1-1PGDG.rhel7.x86_64.rpm
 
 ### 初始化数据库
 
-`/usr/pgsql-15/bin/postgresql-15-setup initdb`
+```
+/usr/pgsql-15/bin/postgresql-15-setup initdb
+```
 
 ### 设置自动启动
 
-`systemctl enable postgresql-15`
-
-`systemctl start postgresql-15`
+```
+systemctl enable postgresql-15
+systemctl start postgresql-15
+```
 
 ### 创建用户和数据库
 
 1、切换postgres用户登录
 
-` su postgres`
+```
+ su postgres
+```
 
 2、登录数据库
 
-`psql`
+```
+psql
+```
 
 3、创建用户和数据库并授权
 
-`create user test_user with password '123456';            // 创建用户`
-
-`create database test_db owner test_user;                 // 创建数据库`
-
-`grant all privileges on database test_db to test_user;   // 授权`
+```
+create user test_user with password '123456';            // 创建用户
+create database test_db owner test_user;                 // 创建数据库
+grant all privileges on database test_db to test_user;   // 授权
+```
 
 如果不创建用户可以使用数据库默认的用户postgres，可以登录数据库后修改用户密码，然后创建数据库并授权；
 
@@ -77,29 +84,33 @@ rpm -ivh postgresql15-contrib-15.1-1PGDG.rhel7.x86_64.rpm
 
 文件路径为/var/lib/pgsql/15/data/postgresql.conf，取消 listen_addresses的注释并将值改为“*”，取消port的注释；
 
-`/var/lib/pgsql/12/data/pg_hba.conf`
-
-`/var/lib/pgsql/12/data/pg_hba.conf`
+```
+listen_addresses = '*'
+port = 5432
+```
 
 2、编辑文件pg_hba.conf
 
 文件路径为/var/lib/pgsql/12/data/pg_hba.conf，在最后添加
 
-`host    all    all    0.0.0.0/0    md5 `
+```
+host    all    all    0.0.0.0/0    md5
+```
 
 3、重启数据库
 
-`systemctl restart postgresql-15`
+```
+systemctl restart postgresql-15
+```
 
 4、关闭防火墙
 
-`systemctl status firewalld.service  查看状态`
-
-`systemctl stop firewalld.service  停止`
-
-`systemctl start firewalld.service  启动`
-
-`systemctl disable firewalld.service  禁止开机自启`
+```
+systemctl status firewalld.service  查看状态
+systemctl stop firewalld.service  停止
+systemctl start firewalld.service  启动
+systemctl disable firewalld.service  禁止开机自启
+```
 
 ### 连接数据库
 
