@@ -78,6 +78,10 @@ grant all privileges on database test_db to test_user;   // 授权
 
 如果不创建用户可以使用数据库默认的用户postgres，可以登录数据库后修改用户密码，然后创建数据库并授权；
 
+```
+alter role postgres with password 'your_pwd';
+```
+
 ### 设置远程连接数据库
 
 1、编辑文件postgresql.conf
