@@ -74,6 +74,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20220625.NET Core项目部署到IIS服务的方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2022-06-25T14:20:03.000Z" itemprop="datePublished">2022-06-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/">.NET Core项目部署到IIS服务的方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>.NET Core是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%BE%AE%E8%BD%AF/124767">微软</a>开发的有跨平台能力的应用程序开发框架 (Application Framework)，适用于 Windows、Linux 和 macOS 的免费、开源托管的计算机软件框架，未来也将会支持 FreeBSD 与 Alpine 平台。</p>
+<img src="https://s2.loli.net/2022/06/06/7faubgJelkFACqx.jpg" style="zoom:80%;" />
+
+<p>Windows Server是微软在2003年推出的Windows 的服务器<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/192">操作系统</a>，其核心是Microsoft Windows Server System（WSS），Windows Server最新的长期服务（LTSC）版本是Windows Server 2019。</p>
+<img src="https://s2.loli.net/2022/06/25/q2ZhQLr7eUS9Fy1.jpg" alt="image002" style="zoom:80%;" />
+
+<h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><p>最新的.NET Core支持在Windows server安装部署时需要安装运环境Windowsdesktop-runtime和dotnet-hosting，如果是在Windows Server 2008R2操作系统上安装，还需要另外安装系统Windows6.1-KB2533623-x64补丁以及<a target="_blank" rel="noopener" href="https://www.microsoft.com/download/details.aspx?id=52685">Microsoft Visual C++ 2015 Redistributable 更新 3</a>程序。</p>
+<p>安装完成后在IIS的模块中可以看到新安装的运行时模块内容就代表安装成功了。</p>
+<img src="https://s2.loli.net/2022/06/25/nmpLCa4v3kH6No2.png" alt="image003" style="zoom:80%;" />
+
+
+
+<img src="https://s2.loli.net/2022/06/25/hjcQfSeLYDu8wCZ.png" alt="image004" style="zoom:80%;" />
+
+<h3 id="添加IIS服务"><a href="#添加IIS服务" class="headerlink" title="添加IIS服务"></a>添加IIS服务</h3><p>Windows server服务器上安装IIS服务,具体的安装步骤此处不再详细介绍，安装时可以把IIS的组件全部安装；</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/#more">更多</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://weaoe.org/2022/06/25/20220625.NET%20Core%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%88%B0IIS%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc8jkxwh0025ucdt51r8cgfq" data-title=".NET Core项目部署到IIS服务的方法" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20220625Visual Studio发布.NET Core项目的方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/" class="article-date">
@@ -121,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc5y0t1w002drcdt5lux0f07" data-title="Visual Studio发布.NET Core项目的方法" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/25/20220625Visual%20Studio%E5%8F%91%E5%B8%83.NET%20Core%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="clc8jkxwl002fucdtabfnfj25" data-title="Visual Studio发布.NET Core项目的方法" class="article-share-link">分享</a>
       
       
       
@@ -180,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" data-id="clc5y0t1k001urcdt11r33j58" data-title="Toad for Oracle 13安装使用说明" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624Toad%20for%20Oracle%2013%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" data-id="clc8jkxwi0028ucdtc29v7vq1" data-title="Toad for Oracle 13安装使用说明" class="article-share-link">分享</a>
       
       
       
@@ -271,7 +334,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" data-id="clc5y0t1m001yrcdtg89qeu9r" data-title="常用Oracle数据库命令" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E5%B8%B8%E7%94%A8Oracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4/" data-id="clc8jkxwb001yucdt283efoa9" data-title="常用Oracle数据库命令" class="article-share-link">分享</a>
       
       
       
@@ -330,7 +393,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="clc5y0t1n0022rcdtazfbbsp6" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/24/20220624%E8%A7%A3%E5%86%B3%E8%BF%9E%E6%8E%A5Oracle12C%E7%9A%84ORA-28040%E9%94%99%E8%AF%AF/" data-id="clc8jkxwc0021ucdte5wxb31n" data-title="解决连接Oracle12C的ORA-28040错误" class="article-share-link">分享</a>
       
       
       
@@ -388,7 +451,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="clc5y0t1i001qrcdtbq76atm7" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/06/15/20220615Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Oracle12C/" data-id="clc8jkxw9001uucdt7lcu2a3k" data-title="Windows操作系统安装Oracle 12C" class="article-share-link">分享</a>
       
       
       
@@ -442,7 +505,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="clc5y0t1g001mrcdt8a4ed3cf" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/22/20220522CentOS%E5%AE%89%E8%A3%85cockpit%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" data-id="clc8jkxw6001oucdtfl1n9540" data-title="CentOS安装cockpit管理工具" class="article-share-link">分享</a>
       
       
       
@@ -498,7 +561,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/" data-id="clc5y0t1e001ircdt148i8t92" data-title="xshell连接Windows乱码和退格键无效" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/17/20220517xshell%E8%BF%9E%E6%8E%A5Windows%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E5%92%8C%E9%80%80%E6%A0%BC%E9%94%AE%E6%97%A0%E6%95%88/" data-id="clc8jkxw5001kucdthrbf8ebb" data-title="xshell连接Windows乱码和退格键无效" class="article-share-link">分享</a>
       
       
       
@@ -570,7 +633,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1/" data-id="clc5y0t1c001ercdthh6mfjfv" data-title="Windows操作系统部署OpenSSH服务" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/05/12/20220512Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E7%BD%B2OpenSSH%E6%9C%8D%E5%8A%A1/" data-id="clc8jkxw8001rucdt2i1y9d3m" data-title="Windows操作系统部署OpenSSH服务" class="article-share-link">分享</a>
       
       
       
@@ -651,71 +714,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/" data-id="clc5y0t1a001arcdt6bspdms0" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
+      <a data-url="https://weaoe.org/2022/04/27/20220427%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%94%B6%E8%97%8F%E5%92%8C%E4%B8%8B%E8%BD%BD/" data-id="clc8jkxw3001gucdt5w04e66h" data-title="常用软件收藏和下载" class="article-share-link">分享</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/System/" rel="tag">System</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-20220803软件推荐@PowerToys" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/" class="article-date">
-  <time class="dt-published" datetime="2022-04-27T14:08:36.000Z" itemprop="datePublished">2022-04-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Software/">Software</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/">软件推荐@PowerToys</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>微软 PowerToys 是免费的系统实用工具套件，从 Windows XP 时代复活，并于 2019 年 5 月引入Windows10系统。可以用于高级用户调整和简化 Windows 操作，以提高效率。通过与 Windows 10&#x2F;11搭配使用，同时让用户可以自定义各种高效快捷操作。</p>
-<img src="https://s2.loli.net/2022/08/03/LdUJPyAbRKwk346.webp" alt="PowerToys" style="zoom:80%;" />
-今天PowerToys 迎来 **0.61.1 版本**，包含始终置顶、FancyZones 和 PowerToys Run 等方面的多项错误修复，详细内容详见官方说明，具体如下：
-
-<h3 id="常规"><a href="#常规" class="headerlink" title="常规"></a>常规</h3><ul>
-<li>已将 Windows 应用 SDK 运行时升级到 1.1.2。</li>
-<li>新的 Windows 11 上下文菜单项现已正确添加到 Windows 11 开发人员频道内部版本。（这是 0.60 的修补程序）</li>
-<li>旧的上下文菜单项与新的 Windows 11 上下文菜单项一起显示，以便与覆盖 Windows 11 上下文菜单行为的软件兼容。（这是 0.60 的修补程序）</li>
-<li>跨解决方案的合并 C# 语言版本。谢谢[@davidegiacometti]！</li>
-<li>删除了已弃用的 Segoe 图标字形代码，并将其替换为正确的代码。谢谢[@niels9001]和[@Jay-o-way]！</li>
-<li>修复了在启用某些模块时导致在某些键盘布局上随机按下重音键的问题。</li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/#more">更多</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://weaoe.org/2022/04/27/20220803%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90@PowerToys/" data-id="clc5y0t1z002krcdt4b0pc5e0" data-title="软件推荐@PowerToys" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
 
     </footer>
   </div>
@@ -740,7 +743,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">19</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Book/">Book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">19</span></li></ul>
     </div>
   </div>
 
@@ -750,7 +753,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostgreSQL/" rel="tag">PostgreSQL</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DM/" rel="tag">DM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DotNet/" rel="tag">DotNet</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IIS/" rel="tag">IIS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenSSH/" rel="tag">OpenSSH</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/" rel="tag">Oracle</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostgreSQL/" rel="tag">PostgreSQL</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Postman/" rel="tag">Postman</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/" rel="tag">Software</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/System/" rel="tag">System</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UOS/" rel="tag">UOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VMware/" rel="tag">VMware</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/system/" rel="tag">system</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -769,7 +772,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">十二月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">十二月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">十月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -780,6 +783,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/12/29/20221229Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AEOracle%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/">Linux服务器设置Oracle数据库开机启动</a>
+          </li>
         
           <li>
             <a href="/2022/12/27/20221227Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85PostgreSQL%E6%95%B0%E6%8D%AE%E5%BA%93/">Linux服务器安装PostgreSQL数据库</a>
@@ -795,10 +802,6 @@
         
           <li>
             <a href="/2022/09/30/20220930%E6%89%B9%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E4%B8%AD%E6%96%87%E8%B7%AF%E5%BE%84%E6%96%B9%E6%B3%95/">批处理命令执行中文路径方法</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/24/20220824%E9%98%85%E8%AF%BB@%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A-%E8%AF%AD%E8%A8%80%E6%98%AF%E7%AA%97%E6%88%B7/">阅读@非暴力沟通-语言是窗户</a>
           </li>
         
       </ul>
